@@ -1,5 +1,12 @@
 # Changelog - Tiered Industries (formerly Tiered Power)
 
+## 1.72.1 - Tree Farm fixes
+
+### Fixed
+- **Tall trees were only cut halfway** and **leaves were left behind**: the Tree Farm's search for the rest of the tree used up its limit on the air around the tree and only looked upwards, so it missed tree tops and leaves hanging below branches. It now follows only the tree itself, in every direction (never below the base), and takes the whole tree - up to 48 blocks tall - every log and every natural leaf. Leaves you placed yourself are left alone.
+- **Lag when trees were felled**: a whole tree used to come down in one tick. Now it comes down 24 blocks per job - leaves first, then the logs from the top - with one chopping sound instead of a break effect for every block.
+- **Trees grew too fast**: Fertilizer now grows at most one step every 2 seconds (about a tree every 4 seconds), so the farm can't flood the world with new trees.
+
 ## 1.72.0 - Tree Farm: all-around planting and Fertilizer
 
 ### Changed

@@ -1,6 +1,7 @@
 {
   "homepage": "https://github.com/CPSDomain/tiered-industries/releases",
   "1.20.1": {
+    "1.72.1": "Tree Farm fixes",
     "1.72.0": "Tree Farm: all-around planting and Fertilizer",
     "1.71.0": "Quantum Chest filters and Receive mode",
     "1.70.0": "Quantum Chests",
@@ -122,7 +123,7 @@
     "0.1": "0.3 - Coal, steam, fusion"
   },
   "promos": {
-    "1.20.1-latest": "1.72.0",
-    "1.20.1-recommended": "1.72.0"
+    "1.20.1-latest": "1.72.1",
+    "1.20.1-recommended": "1.72.1"
   }
 }

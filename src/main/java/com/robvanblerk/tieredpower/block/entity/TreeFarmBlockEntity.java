@@ -1,7 +1,10 @@
 package com.robvanblerk.tieredpower.block.entity;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.jetbrains.annotations.Nullable;
@@ -11,6 +14,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.inventory.MenuType;
@@ -20,6 +25,8 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -36,11 +43,15 @@ import com.robvanblerk.tieredpower.registry.ModMenus;
  * Slots: 0-2 saplings, 3-11 output, 12-13 upgrades, 14 fertilizer.
  */
 public class TreeFarmBlockEntity extends WorkerBlockEntity {
-	public static final int RADIUS = 4, SPACING = 2, MAX_TREE = 256, SPECIAL_NO_SAPLINGS = 1;
+	public static final int RADIUS = 4, SPACING = 2, MAX_TREE = 2048, MAX_HEIGHT = 48, BLOCKS_PER_JOB = 24, SPECIAL_NO_SAPLINGS = 1;
+	/** Ticks between growth steps from fertilizer, so trees don't pop up faster than the server can handle. */
+	public static final int GROW_COOLDOWN = 40;
 	public static final int FERTILIZER_SLOT = 14, SLOTS = 15;
 	public static final int PULSES_PER_FERTILIZER = 32, PULSES_PER_BONE_MEAL = 8;
 	private int cursor, growthCharge;
-	private long lastRestock;
+	private long lastRestock, lastGrow;
+	/** Blocks of the tree being felled, taken a few at a time (not saved: a half-felled tree is found again). */
+	private final ArrayDeque<BlockPos> felling = new ArrayDeque<>();
 
 	public TreeFarmBlockEntity(BlockPos pos, BlockState state) { super(ModBlockEntities.TREE_FARM.get(), pos, state, CAPACITY, MAX_INPUT, SLOTS); }
 	@Override protected int costPerAction() { return 200; }
@@ -56,6 +67,7 @@ public class TreeFarmBlockEntity extends WorkerBlockEntity {
 			lastRestock = level.getGameTime();
 			restock(level, pos);
 		}
+		if (!felling.isEmpty() && fellSome(level)) return true;
 		int perSide = RADIUS / SPACING * 2 + 1; // 5 x 5 grid of tree spots, centred on the machine
 		int spots = perSide * perSide;
 		boolean noSaplings = false;
@@ -66,7 +78,7 @@ public class TreeFarmBlockEntity extends WorkerBlockEntity {
 			BlockPos spot = pos.offset(dx, 0, dz);
 			if (!level.isLoaded(spot)) continue;
 			BlockState s = level.getBlockState(spot);
-			if (s.is(BlockTags.LOGS)) { fell(level, spot); return true; }
+			if (s.is(BlockTags.LOGS)) { startFelling(level, spot); if (fellSome(level)) return true; continue; }
 			if (s.is(BlockTags.SAPLINGS)) {
 				if (grow(level, spot, s)) return true;
 				continue;
@@ -90,7 +102,9 @@ public class TreeFarmBlockEntity extends WorkerBlockEntity {
 	/** One growth step for a sapling, from the growth charge (Fertilizer or bone meal). Works in the dark too. */
 	private boolean grow(ServerLevel level, BlockPos spot, BlockState state) {
 		if (!level.isEmptyBlock(spot.above()) || !level.isEmptyBlock(spot.above(2))) return false; // no room to grow: don't waste fertilizer
+		if (level.getGameTime() - lastGrow < GROW_COOLDOWN) return false;
 		if (growthCharge <= 0 && !refuel()) return false;
+		lastGrow = level.getGameTime();
 		if (state.getBlock() instanceof SaplingBlock sapling) {
 			sapling.advanceTree(level, spot, state, level.random);
 		} else if (state.getBlock() instanceof BonemealableBlock b && b.isValidBonemealTarget(level, spot, state, false)) {
@@ -145,26 +159,63 @@ public class TreeFarmBlockEntity extends WorkerBlockEntity {
 		}
 	}
 
-	/** Breaks the whole tree: connected logs and leaves, up to 256 blocks. */
-	private void fell(ServerLevel level, BlockPos start) {
+	/**
+	 * Finds the whole tree from one log: every connected log and (natural, not player-placed) leaf, in any direction
+	 * but never below the base, up to 2,048 blocks. Leaves come off first, then the logs from the top down. The
+	 * blocks are taken BLOCKS_PER_JOB at a time over the next jobs, so a big tree doesn't cause a lag spike.
+	 */
+	private void startFelling(ServerLevel level, BlockPos start) {
 		Set<BlockPos> seen = new HashSet<>();
 		ArrayDeque<BlockPos> queue = new ArrayDeque<>();
+		List<BlockPos> leaves = new ArrayList<>(), logs = new ArrayList<>();
 		queue.add(start);
-		var player = fakePlayer(level);
-		while (!queue.isEmpty() && seen.size() < MAX_TREE) {
+		seen.add(start);
+		while (!queue.isEmpty() && logs.size() + leaves.size() < MAX_TREE) {
 			BlockPos p = queue.poll();
-			if (!seen.add(p)) continue;
 			BlockState s = level.getBlockState(p);
-			if (!s.is(BlockTags.LOGS) && !s.is(BlockTags.LEAVES)) continue;
-			for (ItemStack d : Block.getDrops(s, level, p, null, player, ItemStack.EMPTY)) keep(level, p, d);
-			level.destroyBlock(p, false);
+			if (s.is(BlockTags.LOGS)) logs.add(p);
+			else if (isNaturalLeaves(s)) leaves.add(p);
+			else continue; // only spread through the tree itself
 			for (int dx = -1; dx <= 1; dx++)
-				for (int dy = 0; dy <= 1; dy++)
+				for (int dy = -1; dy <= 1; dy++)
 					for (int dz = -1; dz <= 1; dz++) {
 						BlockPos n = p.offset(dx, dy, dz);
-						if (!seen.contains(n) && Math.abs(n.getX() - start.getX()) <= 12 && Math.abs(n.getZ() - start.getZ()) <= 12) queue.add(n);
+						if (n.getY() < start.getY() || n.getY() > start.getY() + MAX_HEIGHT) continue;
+						if (Math.abs(n.getX() - start.getX()) > 12 || Math.abs(n.getZ() - start.getZ()) > 12) continue;
+						if (seen.add(n)) queue.add(n);
 					}
 		}
+		Comparator<BlockPos> topDown = Comparator.comparingInt(BlockPos::getY).reversed();
+		leaves.sort(topDown);
+		logs.sort(topDown);
+		felling.clear();
+		felling.addAll(leaves);
+		felling.addAll(logs);
+	}
+
+	private static boolean isNaturalLeaves(BlockState s) {
+		return s.is(BlockTags.LEAVES) && !(s.hasProperty(LeavesBlock.PERSISTENT) && s.getValue(LeavesBlock.PERSISTENT));
+	}
+
+	/** Takes the next few blocks of the tree being felled. Returns false when there's nothing left to take. */
+	private boolean fellSome(ServerLevel level) {
+		var player = fakePlayer(level);
+		int taken = 0;
+		BlockPos last = null;
+		while (!felling.isEmpty() && taken < BLOCKS_PER_JOB) {
+			BlockPos p = felling.poll();
+			BlockState s = level.getBlockState(p);
+			boolean log = s.is(BlockTags.LOGS);
+			if (!log && !isNaturalLeaves(s)) continue; // already gone
+			for (ItemStack d : Block.getDrops(s, level, p, null, player, ItemStack.EMPTY)) keep(level, p, d);
+			// Leaves go quietly (no neighbour updates - the rest of the tree is coming down anyway); logs update their
+			// neighbours as normal so nothing is left floating.
+			level.setBlock(p, Blocks.AIR.defaultBlockState(), log ? Block.UPDATE_ALL : Block.UPDATE_CLIENTS | Block.UPDATE_KNOWN_SHAPE);
+			taken++;
+			last = p;
+		}
+		if (last != null) level.playSound(null, last, SoundEvents.WOOD_BREAK, SoundSource.BLOCKS, 0.6f, 0.9f);
+		return taken > 0;
 	}
 
 	/** Saplings top up the sapling slots first (so it never runs out); everything else goes to the output. */

@@ -1,5 +1,5 @@
 {
- "version": "1.72.0",
+ "version": "1.72.1",
  "start": [
   {
    "title": "Coal",
@@ -2585,7 +2585,7 @@
     },
     {
      "id": "tree_farm",
-     "text": "A hands-off wood supply. It plants saplings all around itself at its own level - on every other block out to 4 blocks away, so 24 trees each with room to grow - on dirt or grass, and fells grown trees (every connected log and leaf), keeping the logs, sticks and apples. Saplings that drop go straight back into its sapling slots, so a handful keeps it going. Put Fertilizer (or bone meal) in the slot on the left and it grows the saplings itself - even at night or in the dark, where saplings normally won't grow: one Fertilizer is 32 growth steps (about 16 trees), bone meal 8. Next to a storage network it keeps itself topped up with Fertilizer and more of its saplings. 2x2 trees (dark oak, giant spruce) won't grow - use single saplings. 200 FE per job; Speed Upgrades help.",
+     "text": "A hands-off wood supply. It plants saplings all around itself at its own level - on every other block out to 4 blocks away, so 24 trees each with room to grow - on dirt or grass, and fells grown trees - the whole tree, however tall, every log and leaf, a few blocks at a time so big trees don't lag - keeping the logs, sticks and apples. Saplings that drop go straight back into its sapling slots, so a handful keeps it going. Put Fertilizer (or bone meal) in the slot on the left and it grows the saplings itself - even at night or in the dark, where saplings normally won't grow: one Fertilizer is 32 growth steps (about 16 trees), bone meal 8, at most one step every 2 seconds. Next to a storage network it keeps itself topped up with Fertilizer and more of its saplings. 2x2 trees (dark oak, giant spruce) won't grow - use single saplings. 200 FE per job; Speed Upgrades help.",
      "stats": [
       [
        "Area",
@@ -2593,7 +2593,11 @@
       ],
       [
        "Fertilizer",
-       "32 growth steps (bone meal 8), works in the dark"
+       "32 growth steps (bone meal 8), one every 2 s, works in the dark"
+      ],
+      [
+       "Felling",
+       "whole tree up to 48 tall, 24 blocks per job"
       ],
       [
        "Power",
