@@ -185,7 +185,7 @@ public class TreeFarmBlockEntity extends WorkerBlockEntity {
 						if (seen.add(n)) queue.add(n);
 					}
 		}
-		Comparator<BlockPos> topDown = Comparator.comparingInt(BlockPos::getY).reversed();
+		Comparator<BlockPos> topDown = Comparator.comparingInt((BlockPos p) -> p.getY()).reversed();
 		leaves.sort(topDown);
 		logs.sort(topDown);
 		felling.clear();
