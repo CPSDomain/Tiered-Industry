@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#tieredpower:planet_biomes",
+  "features": "tieredpower:crystal_resonance",
+  "step": "underground_ores"
+}

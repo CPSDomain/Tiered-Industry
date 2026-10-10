@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SVS",
+    "SCS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "V": {
+      "item": "tieredpower:basic_gas_pipe"
+    },
+    "C": {
+      "item": "tieredpower:gas_cylinder"
+    }
+  },
+  "result": {
+    "item": "tieredpower:gas_tank",
+    "count": 1
+  }
+}

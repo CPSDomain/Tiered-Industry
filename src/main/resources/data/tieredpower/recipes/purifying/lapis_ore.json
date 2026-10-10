@@ -1,0 +1,10 @@
+{
+  "type": "tieredpower:purifying",
+  "ingredient": {
+    "tag": "forge:ores/lapis"
+  },
+  "result": {
+    "item": "minecraft:lapis_lazuli",
+    "count": 12
+  }
+}

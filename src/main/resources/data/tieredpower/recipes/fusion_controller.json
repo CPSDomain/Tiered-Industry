@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "CDC",
+    "DFD",
+    "CDC"
+  ],
+  "key": {
+    "C": {
+      "item": "tieredpower:reactor_casing"
+    },
+    "D": {
+      "item": "tieredpower:diamond_cable"
+    },
+    "F": {
+      "item": "tieredpower:fusion_reactor"
+    }
+  },
+  "result": {
+    "item": "tieredpower:fusion_controller",
+    "count": 1
+  }
+}

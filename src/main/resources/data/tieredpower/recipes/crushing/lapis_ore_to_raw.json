@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "tag": "forge:ores/lapis"
+  },
+  "result": {
+    "item": "minecraft:lapis_lazuli",
+    "count": 10
+  },
+  "time": 80
+}

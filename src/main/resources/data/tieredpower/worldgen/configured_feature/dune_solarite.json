@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 10,
+    "discard_chance_on_air_exposure": 0.0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:sand"
+        },
+        "state": {
+          "Name": "tieredpower:solarite_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:red_sand"
+        },
+        "state": {
+          "Name": "tieredpower:solarite_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:sandstone"
+        },
+        "state": {
+          "Name": "tieredpower:solarite_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:red_sandstone"
+        },
+        "state": {
+          "Name": "tieredpower:solarite_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:terracotta"
+        },
+        "state": {
+          "Name": "tieredpower:solarite_sand"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:orange_terracotta"
+        },
+        "state": {
+          "Name": "tieredpower:solarite_sand"
+        }
+      }
+    ]
+  }
+}

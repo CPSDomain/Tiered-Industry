@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "SPS",
+    "CEC",
+    "SGS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "P": {
+      "item": "tieredpower:basic_gas_pipe"
+    },
+    "C": {
+      "item": "tieredpower:gold_cable"
+    },
+    "E": {
+      "item": "tieredpower:gas_electrolyzer"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "tieredpower:brine_electrolyzer",
+    "count": 1
+  }
+}

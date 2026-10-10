@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:sawing",
+  "ingredient": {
+    "tag": "minecraft:planks"
+  },
+  "result": {
+    "item": "minecraft:stick",
+    "count": 3
+  },
+  "time": 30
+}

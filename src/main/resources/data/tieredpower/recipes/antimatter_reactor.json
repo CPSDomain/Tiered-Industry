@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "QNQ",
+    "CEC",
+    "QNQ"
+  ],
+  "key": {
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "C": {
+      "item": "tieredpower:quantum_power_core"
+    },
+    "E": {
+      "item": "tieredpower:quantum_energy_cell"
+    }
+  },
+  "result": {
+    "item": "tieredpower:antimatter_reactor",
+    "count": 1
+  }
+}

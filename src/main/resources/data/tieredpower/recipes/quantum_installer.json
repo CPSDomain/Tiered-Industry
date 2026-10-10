@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MRM",
+    "SPS",
+    "MRM"
+  ],
+  "key": {
+    "M": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "P": {
+      "item": "minecraft:piston"
+    }
+  },
+  "result": {
+    "item": "tieredpower:quantum_installer",
+    "count": 1
+  }
+}

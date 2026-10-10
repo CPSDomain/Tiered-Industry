@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BGB",
+    "BRB"
+  ],
+  "key": {
+    "B": {
+      "item": "tieredpower:conveyor_belt"
+    },
+    "G": {
+      "tag": "forge:plates/gold"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "tieredpower:fast_conveyor_belt",
+    "count": 4
+  }
+}

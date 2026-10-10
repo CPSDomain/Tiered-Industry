@@ -1,0 +1,10 @@
+{
+  "type": "tieredpower:purifying",
+  "ingredient": {
+    "tag": "forge:raw_materials/copper"
+  },
+  "result": {
+    "item": "tieredpower:copper_dust",
+    "count": 3
+  }
+}

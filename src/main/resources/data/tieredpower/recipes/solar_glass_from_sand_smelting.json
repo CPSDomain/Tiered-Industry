@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "tieredpower:solarite_sand"
+  },
+  "result": "tieredpower:solar_glass",
+  "experience": 1.0,
+  "cookingtime": 200
+}

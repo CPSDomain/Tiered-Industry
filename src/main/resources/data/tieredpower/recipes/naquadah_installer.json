@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NRN",
+    "SPS",
+    "NRN"
+  ],
+  "key": {
+    "N": {
+      "tag": "forge:ingots/naquadah"
+    },
+    "R": {
+      "item": "tieredpower:resonance_crystal"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "P": {
+      "item": "tieredpower:quantum_installer"
+    }
+  },
+  "result": {
+    "item": "tieredpower:naquadah_installer",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " P ",
+    "IBI"
+  ],
+  "key": {
+    "P": {
+      "item": "tieredpower:basic_fluid_pipe"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "B": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "result": {
+    "item": "tieredpower:sprinkler",
+    "count": 2
+  }
+}

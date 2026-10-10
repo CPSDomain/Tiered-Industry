@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CSC",
+    "PAP",
+    "CEC"
+  ],
+  "key": {
+    "C": {
+      "item": "tieredpower:matrix_casing"
+    },
+    "S": {
+      "item": "tieredpower:storage_terminal"
+    },
+    "P": {
+      "item": "tieredpower:blank_pattern"
+    },
+    "A": {
+      "item": "tieredpower:molecular_assembler"
+    },
+    "E": {
+      "item": "tieredpower:crafting_cpu"
+    }
+  },
+  "result": {
+    "item": "tieredpower:matrix_controller",
+    "count": 1
+  }
+}

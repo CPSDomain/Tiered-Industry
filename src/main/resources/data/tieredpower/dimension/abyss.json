@@ -1,0 +1,35 @@
+{
+  "type": "tieredpower:planet",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:warm_ocean",
+      "lakes": false,
+      "features": true,
+      "layers": [
+        {
+          "block": "minecraft:bedrock",
+          "height": 1
+        },
+        {
+          "block": "minecraft:stone",
+          "height": 70
+        },
+        {
+          "block": "minecraft:sand",
+          "height": 4
+        },
+        {
+          "block": "minecraft:water",
+          "height": 45
+        }
+      ],
+      "structure_overrides": [
+        "minecraft:ocean_monuments",
+        "minecraft:shipwrecks",
+        "minecraft:ocean_ruins",
+        "minecraft:buried_treasures"
+      ]
+    }
+  }
+}

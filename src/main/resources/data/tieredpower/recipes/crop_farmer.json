@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "IHI",
+    "CWC",
+    "IRI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "H": {
+      "item": "minecraft:iron_hoe"
+    },
+    "C": {
+      "item": "tieredpower:copper_cable"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "tieredpower:crop_farmer",
+    "count": 1
+  }
+}

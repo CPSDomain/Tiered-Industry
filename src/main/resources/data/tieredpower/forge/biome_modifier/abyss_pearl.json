@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#tieredpower:planet_biomes",
+  "features": "tieredpower:abyss_pearl",
+  "step": "underground_ores"
+}

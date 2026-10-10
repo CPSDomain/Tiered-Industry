@@ -1,0 +1,14 @@
+{
+  "type": "tieredpower:sawing",
+  "ingredient": {
+    "tag": "minecraft:birch_logs"
+  },
+  "result": {
+    "item": "minecraft:birch_planks",
+    "count": 6
+  },
+  "secondary": {
+    "item": "tieredpower:sawdust",
+    "count": 1
+  }
+}

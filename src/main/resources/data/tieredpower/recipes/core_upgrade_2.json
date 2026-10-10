@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MXM",
+    "X X",
+    "MXM"
+  ],
+  "key": {
+    "X": {
+      "item": "tieredpower:quantum_energy_cell"
+    },
+    "M": {
+      "tag": "forge:ingots/superconductor"
+    }
+  },
+  "result": {
+    "item": "tieredpower:core_upgrade_2",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "QSQ",
+    "SPS",
+    "QSQ"
+  ],
+  "key": {
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "S": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "P": {
+      "item": "tieredpower:quantum_power_core"
+    }
+  },
+  "result": {
+    "item": "tieredpower:stargate_frame",
+    "count": 8
+  }
+}

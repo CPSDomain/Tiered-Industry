@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:pulverizing",
+  "ingredient": {
+    "tag": "forge:ores/gold"
+  },
+  "result": {
+    "item": "tieredpower:gold_dust",
+    "count": 2
+  },
+  "time": 100
+}

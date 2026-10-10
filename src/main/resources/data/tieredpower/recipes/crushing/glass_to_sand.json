@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "tag": "forge:glass"
+  },
+  "result": {
+    "item": "minecraft:sand",
+    "count": 1
+  },
+  "time": 60
+}

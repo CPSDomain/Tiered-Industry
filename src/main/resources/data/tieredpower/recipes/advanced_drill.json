@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "UUU",
+    "CDC",
+    " E "
+  ],
+  "key": {
+    "U": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "C": {
+      "item": "tieredpower:diamond_cable"
+    },
+    "D": {
+      "item": "tieredpower:electric_drill"
+    },
+    "E": {
+      "item": "tieredpower:advanced_battery_box"
+    }
+  },
+  "result": {
+    "item": "tieredpower:advanced_drill",
+    "count": 1
+  }
+}

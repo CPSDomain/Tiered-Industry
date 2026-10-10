@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "MQM",
+    "QBQ",
+    "MQM"
+  ],
+  "key": {
+    "M": {
+      "item": "tieredpower:lifebloom"
+    },
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "B": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "result": {
+    "item": "tieredpower:regeneration_module",
+    "count": 1
+  }
+}

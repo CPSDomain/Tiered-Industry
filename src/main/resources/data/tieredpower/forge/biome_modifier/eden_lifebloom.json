@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#tieredpower:planet_biomes",
+  "features": "tieredpower:eden_lifebloom",
+  "step": "vegetal_decoration"
+}

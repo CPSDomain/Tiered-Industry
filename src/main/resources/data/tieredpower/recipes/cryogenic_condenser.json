@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SPS",
+    "IFI",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "P": {
+      "item": "tieredpower:basic_gas_pipe"
+    },
+    "I": {
+      "item": "minecraft:blue_ice"
+    },
+    "F": {
+      "item": "tieredpower:air_separator"
+    },
+    "C": {
+      "item": "tieredpower:gold_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:cryogenic_condenser",
+    "count": 1
+  }
+}

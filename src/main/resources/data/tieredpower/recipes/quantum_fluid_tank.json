@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "QGQ",
+    "GTG",
+    "QGQ"
+  ],
+  "key": {
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "T": {
+      "item": "tieredpower:ultimate_fluid_tank"
+    }
+  },
+  "result": {
+    "item": "tieredpower:quantum_fluid_tank",
+    "count": 1
+  }
+}

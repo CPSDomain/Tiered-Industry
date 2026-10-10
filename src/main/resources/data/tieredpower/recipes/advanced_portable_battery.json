@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "UAU",
+    "UPU",
+    "UUU"
+  ],
+  "key": {
+    "U": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "A": {
+      "item": "tieredpower:advanced_battery_box"
+    },
+    "P": {
+      "item": "tieredpower:portable_battery"
+    }
+  },
+  "result": {
+    "item": "tieredpower:advanced_portable_battery",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "QDQ",
+    "DPD",
+    "QDQ"
+  ],
+  "key": {
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "D": {
+      "item": "tieredpower:fluid_disk_1m"
+    },
+    "P": {
+      "item": "tieredpower:quantum_power_core"
+    }
+  },
+  "result": {
+    "item": "tieredpower:fluid_disk_4m",
+    "count": 1
+  }
+}

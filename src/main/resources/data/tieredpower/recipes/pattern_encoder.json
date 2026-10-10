@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BCB",
+    "STS",
+    "SSS"
+  ],
+  "key": {
+    "B": {
+      "item": "tieredpower:blank_pattern"
+    },
+    "C": {
+      "item": "minecraft:crafting_table"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "T": {
+      "item": "tieredpower:storage_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:pattern_encoder",
+    "count": 1
+  }
+}

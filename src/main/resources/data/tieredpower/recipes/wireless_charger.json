@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "SES",
+    "CXC",
+    "SBS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:ingots/steel"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "C": {
+      "item": "tieredpower:gold_cable"
+    },
+    "X": {
+      "item": "tieredpower:charger"
+    },
+    "B": {
+      "item": "tieredpower:advanced_battery_box"
+    }
+  },
+  "result": {
+    "item": "tieredpower:wireless_charger",
+    "count": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "tieredpower:alloying",
+  "inputs": [
+    {
+      "ingredient": [
+        {
+          "tag": "forge:ingots/copper"
+        },
+        {
+          "tag": "forge:dusts/copper"
+        }
+      ],
+      "count": 3
+    },
+    {
+      "ingredient": [
+        {
+          "tag": "forge:ingots/lithium"
+        },
+        {
+          "tag": "forge:dusts/lithium"
+        }
+      ],
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "tieredpower:superconductor_ingot",
+    "count": 2
+  },
+  "time": 300
+}

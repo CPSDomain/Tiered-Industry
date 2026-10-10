@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tieredpower:water_wheel",
+    "tieredpower:treated_planks",
+    "tieredpower:livingwood_log",
+    "tieredpower:livingwood_planks"
+  ]
+}

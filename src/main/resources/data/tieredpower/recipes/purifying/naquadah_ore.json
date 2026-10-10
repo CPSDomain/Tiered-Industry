@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:purifying",
+  "ingredient": {
+    "tag": "forge:ores/naquadah"
+  },
+  "result": {
+    "item": "tieredpower:naquadah_dust",
+    "count": 3
+  },
+  "time": 100
+}

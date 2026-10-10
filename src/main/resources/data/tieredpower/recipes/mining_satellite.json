@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PSP",
+    "SLS",
+    "PCP"
+  ],
+  "key": {
+    "P": {
+      "item": "tieredpower:quantum_solar_panel"
+    },
+    "S": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "L": {
+      "item": "tieredpower:diamond_laser_lens"
+    },
+    "C": {
+      "item": "tieredpower:quantum_power_core"
+    }
+  },
+  "result": {
+    "item": "tieredpower:mining_satellite",
+    "count": 1
+  }
+}

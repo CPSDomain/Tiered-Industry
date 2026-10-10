@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " E ",
+    "STS",
+    "SBS"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "T": {
+      "item": "tieredpower:storage_terminal_panel"
+    },
+    "B": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "tieredpower:wireless_terminal",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#tieredpower:planet_biomes",
+  "features": "tieredpower:planet_uranium_ore",
+  "step": "underground_ores"
+}

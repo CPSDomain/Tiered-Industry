@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:purifying",
+  "ingredient": {
+    "item": "minecraft:dirt"
+  },
+  "result": {
+    "item": "minecraft:clay_ball",
+    "count": 2
+  },
+  "time": 60
+}

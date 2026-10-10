@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:compressing",
+  "ingredient": {
+    "tag": "forge:ingots/gold"
+  },
+  "result": {
+    "item": "tieredpower:gold_plate",
+    "count": 1
+  },
+  "time": 80
+}

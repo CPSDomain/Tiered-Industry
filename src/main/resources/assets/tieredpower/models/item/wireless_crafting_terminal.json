@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "tieredpower:item/wireless_crafting_terminal"
+  }
+}

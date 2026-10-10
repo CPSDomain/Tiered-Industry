@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " G ",
+    "GXG",
+    " G "
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "X": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "result": {
+    "item": "tieredpower:redstone_laser_lens",
+    "count": 1
+  }
+}

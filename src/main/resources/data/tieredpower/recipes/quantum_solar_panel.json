@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "PQP",
+    "QCQ",
+    "PQP"
+  ],
+  "key": {
+    "P": {
+      "item": "tieredpower:ultimate_solar_panel"
+    },
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "C": {
+      "item": "tieredpower:quantum_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:quantum_solar_panel",
+    "count": 1
+  }
+}

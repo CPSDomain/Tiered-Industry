@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "tieredpower:block/advanced_battery_box_input",
+    "north": "tieredpower:block/advanced_battery_box_input",
+    "south": "tieredpower:block/advanced_battery_box_output",
+    "east": "tieredpower:block/advanced_battery_box_output",
+    "west": "tieredpower:block/advanced_battery_box_output",
+    "up": "tieredpower:block/advanced_battery_box_output",
+    "down": "tieredpower:block/advanced_battery_box_output"
+  }
+}

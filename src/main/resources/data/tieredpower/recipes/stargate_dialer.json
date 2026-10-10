@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "EBE",
+    "QPQ",
+    "NCN"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "B": {
+      "item": "minecraft:beacon"
+    },
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "P": {
+      "item": "tieredpower:quantum_power_core"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "C": {
+      "item": "tieredpower:quantum_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:stargate_dialer",
+    "count": 1
+  }
+}

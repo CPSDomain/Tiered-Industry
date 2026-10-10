@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "PGP",
+    "UUU",
+    "PGP"
+  ],
+  "key": {
+    "P": {
+      "tag": "forge:plates/steel"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "U": {
+      "tag": "forge:ingots/uranium"
+    }
+  },
+  "result": {
+    "item": "tieredpower:fuel_assembly",
+    "count": 1
+  }
+}

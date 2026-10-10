@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " N ",
+    "FGF",
+    "FEF"
+  ],
+  "key": {
+    "N": {
+      "item": "tieredpower:nose_cone"
+    },
+    "F": {
+      "item": "tieredpower:fuel_tank_section"
+    },
+    "G": {
+      "item": "tieredpower:guidance_computer"
+    },
+    "E": {
+      "item": "tieredpower:rocket_engine"
+    }
+  },
+  "result": {
+    "item": "tieredpower:rocket",
+    "count": 1
+  }
+}

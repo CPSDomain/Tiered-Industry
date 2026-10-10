@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:pulverizing",
+  "ingredient": {
+    "tag": "forge:ingots/lithium"
+  },
+  "result": {
+    "item": "tieredpower:lithium_dust",
+    "count": 1
+  },
+  "time": 60
+}

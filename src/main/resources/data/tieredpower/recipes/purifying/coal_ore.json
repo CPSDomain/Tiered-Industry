@@ -1,0 +1,10 @@
+{
+  "type": "tieredpower:purifying",
+  "ingredient": {
+    "tag": "forge:ores/coal"
+  },
+  "result": {
+    "item": "minecraft:coal",
+    "count": 4
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "SXS",
+    "CBC",
+    "SHS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:ingots/steel"
+    },
+    "X": {
+      "item": "minecraft:diamond_sword"
+    },
+    "C": {
+      "item": "tieredpower:gold_cable"
+    },
+    "B": {
+      "item": "minecraft:redstone_block"
+    },
+    "H": {
+      "item": "minecraft:hopper"
+    }
+  },
+  "result": {
+    "item": "tieredpower:mob_grinder",
+    "count": 1
+  }
+}

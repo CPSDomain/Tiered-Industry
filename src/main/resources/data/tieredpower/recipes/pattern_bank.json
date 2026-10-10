@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CPC",
+    "PDP",
+    "CPC"
+  ],
+  "key": {
+    "C": {
+      "item": "tieredpower:matrix_casing"
+    },
+    "P": {
+      "item": "tieredpower:blank_pattern"
+    },
+    "D": {
+      "item": "minecraft:chest"
+    }
+  },
+  "result": {
+    "item": "tieredpower:pattern_bank",
+    "count": 1
+  }
+}

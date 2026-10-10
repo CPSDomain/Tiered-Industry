@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "SCS",
+    "CBC",
+    "SDS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "C": {
+      "item": "tieredpower:diamond_cable"
+    },
+    "B": {
+      "item": "tieredpower:advanced_battery_box"
+    },
+    "D": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result": {
+    "item": "tieredpower:elite_battery_box",
+    "count": 1
+  }
+}

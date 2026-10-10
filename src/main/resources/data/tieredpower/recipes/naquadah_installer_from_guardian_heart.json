@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tieredpower:guardian_heart"
+    },
+    {
+      "item": "tieredpower:quantum_installer"
+    }
+  ],
+  "result": {
+    "item": "tieredpower:naquadah_installer",
+    "count": 1
+  }
+}

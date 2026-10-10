@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "item": "minecraft:deepslate"
+  },
+  "result": {
+    "item": "minecraft:cobbled_deepslate",
+    "count": 1
+  },
+  "time": 40
+}

@@ -1,0 +1,94 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "tieredpower:block/energy_core_plasma",
+    "p": "tieredpower:block/energy_core_plasma"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#p",
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#p",
+          "tintindex": 0
+        },
+        "east": {
+          "texture": "#p",
+          "tintindex": 0
+        },
+        "west": {
+          "texture": "#p",
+          "tintindex": 0
+        },
+        "up": {
+          "texture": "#p",
+          "tintindex": 0
+        },
+        "down": {
+          "texture": "#p",
+          "tintindex": 0
+        }
+      }
+    },
+    {
+      "from": [
+        2,
+        2,
+        -1
+      ],
+      "to": [
+        14,
+        14,
+        17
+      ],
+      "faces": {
+        "north": {
+          "texture": "#p",
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#p",
+          "tintindex": 0
+        },
+        "east": {
+          "texture": "#p",
+          "tintindex": 0
+        },
+        "west": {
+          "texture": "#p",
+          "tintindex": 0
+        },
+        "up": {
+          "texture": "#p",
+          "tintindex": 0
+        },
+        "down": {
+          "texture": "#p",
+          "tintindex": 0
+        }
+      },
+      "rotation": {
+        "angle": 45,
+        "axis": "z",
+        "origin": [
+          8,
+          8,
+          8
+        ]
+      }
+    }
+  ]
+}

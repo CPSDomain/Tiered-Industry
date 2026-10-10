@@ -1,0 +1,10 @@
+{
+  "type": "tieredpower:purifying",
+  "ingredient": {
+    "tag": "forge:ores/uranium"
+  },
+  "result": {
+    "item": "tieredpower:uranium_dust",
+    "count": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:pulverizing",
+  "ingredient": {
+    "tag": "forge:ingots/gold"
+  },
+  "result": {
+    "item": "tieredpower:gold_dust",
+    "count": 1
+  },
+  "time": 60
+}

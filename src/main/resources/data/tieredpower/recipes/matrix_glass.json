@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GCG",
+    "C C",
+    "GCG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "C": {
+      "item": "tieredpower:matrix_casing"
+    }
+  },
+  "result": {
+    "item": "tieredpower:matrix_glass",
+    "count": 4
+  }
+}

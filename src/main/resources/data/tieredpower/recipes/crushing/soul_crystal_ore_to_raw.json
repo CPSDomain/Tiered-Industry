@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "tag": "forge:ores/soul_crystal"
+  },
+  "result": {
+    "item": "tieredpower:soul_crystal",
+    "count": 4
+  },
+  "time": 80
+}

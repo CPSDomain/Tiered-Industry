@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "tag": "forge:ores/gold"
+  },
+  "result": {
+    "item": "minecraft:raw_gold",
+    "count": 2
+  },
+  "time": 80
+}

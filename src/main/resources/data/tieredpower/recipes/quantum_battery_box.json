@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "QCQ",
+    "CBC",
+    "QSQ"
+  ],
+  "key": {
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "C": {
+      "item": "tieredpower:quantum_cable"
+    },
+    "B": {
+      "item": "tieredpower:ultimate_battery_box"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "tieredpower:quantum_battery_box",
+    "count": 1
+  }
+}

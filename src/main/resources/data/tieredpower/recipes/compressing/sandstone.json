@@ -1,0 +1,12 @@
+{
+  "type": "tieredpower:compressing",
+  "ingredient": {
+    "item": "minecraft:sand"
+  },
+  "result": {
+    "item": "minecraft:sandstone",
+    "count": 1
+  },
+  "count": 4,
+  "time": 60
+}

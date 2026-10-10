@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "tag": "forge:ores/uranium"
+  },
+  "result": {
+    "item": "tieredpower:raw_uranium",
+    "count": 2
+  },
+  "time": 80
+}

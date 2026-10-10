@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "MQM",
+    "QBQ",
+    "MQM"
+  ],
+  "key": {
+    "M": {
+      "item": "tieredpower:soul_crystal"
+    },
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "B": {
+      "item": "minecraft:magma_cream"
+    }
+  },
+  "result": {
+    "item": "tieredpower:fire_immunity_module",
+    "count": 1
+  }
+}

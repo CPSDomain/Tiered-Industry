@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SPS",
+    "FBO",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "P": {
+      "item": "tieredpower:pulverizer"
+    },
+    "F": {
+      "item": "tieredpower:electric_furnace"
+    },
+    "O": {
+      "item": "tieredpower:ore_purifier"
+    },
+    "B": {
+      "item": "tieredpower:advanced_battery_box"
+    },
+    "C": {
+      "item": "tieredpower:gold_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:digital_factory",
+    "count": 1
+  }
+}

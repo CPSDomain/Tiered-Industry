@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tieredpower:cryonite_block"
+    }
+  ],
+  "result": {
+    "item": "tieredpower:cryonite_shard",
+    "count": 9
+  }
+}

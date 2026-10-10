@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "tieredpower:naquadah_ore",
+    "tieredpower:resonance_crystal_ore",
+    "tieredpower:naquadah_block",
+    "tieredpower:guardian_altar",
+    "tieredpower:gravitite_ore",
+    "tieredpower:umbral_ore",
+    "tieredpower:voidstone_ore"
+  ]
+}

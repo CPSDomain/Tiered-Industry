@@ -1,0 +1,14 @@
+{
+  "type": "tieredpower:sawing",
+  "ingredient": {
+    "tag": "minecraft:jungle_logs"
+  },
+  "result": {
+    "item": "minecraft:jungle_planks",
+    "count": 6
+  },
+  "secondary": {
+    "item": "tieredpower:sawdust",
+    "count": 1
+  }
+}

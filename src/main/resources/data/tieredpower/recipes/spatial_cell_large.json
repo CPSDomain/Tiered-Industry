@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "QSQ",
+    "SCS",
+    "QSQ"
+  ],
+  "key": {
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "S": {
+      "item": "minecraft:shulker_shell"
+    },
+    "C": {
+      "item": "tieredpower:spatial_cell_medium"
+    }
+  },
+  "result": {
+    "item": "tieredpower:spatial_cell_large",
+    "count": 1
+  }
+}

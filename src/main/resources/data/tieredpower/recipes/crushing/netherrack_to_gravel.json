@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "item": "minecraft:netherrack"
+  },
+  "result": {
+    "item": "minecraft:gravel",
+    "count": 1
+  },
+  "time": 40
+}

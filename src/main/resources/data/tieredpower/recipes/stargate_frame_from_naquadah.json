@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NSN",
+    "S S",
+    "NSN"
+  ],
+  "key": {
+    "N": {
+      "tag": "forge:ingots/naquadah"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    }
+  },
+  "result": {
+    "item": "tieredpower:stargate_frame",
+    "count": 8
+  }
+}

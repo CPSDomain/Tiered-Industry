@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "UEU",
+    "PCP",
+    "SBS"
+  ],
+  "key": {
+    "U": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "P": {
+      "tag": "forge:plates/steel"
+    },
+    "C": {
+      "item": "tieredpower:diamond_cable"
+    },
+    "S": {
+      "tag": "forge:ingots/steel"
+    },
+    "B": {
+      "item": "tieredpower:advanced_battery_box"
+    }
+  },
+  "result": {
+    "item": "tieredpower:teleporter",
+    "count": 2
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:raw_materials/lithium",
+    "#forge:raw_materials/naquadah"
+  ]
+}

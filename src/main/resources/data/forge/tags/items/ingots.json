@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "tieredpower:steel_ingot",
+    "tieredpower:lithium_ingot",
+    "tieredpower:superconductor_ingot",
+    "#forge:ingots/plutonium",
+    "#forge:ingots/naquadah"
+  ]
+}

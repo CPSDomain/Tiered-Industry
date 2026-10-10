@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " H ",
+    "SCS"
+  ],
+  "key": {
+    "H": {
+      "item": "minecraft:hopper"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "C": {
+      "item": "tieredpower:storage_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:import_bus",
+    "count": 1
+  }
+}

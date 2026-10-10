@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tieredpower:item/elite_item_pipe"
+  }
+}

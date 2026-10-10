@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tieredpower:item/depleted_fuel_rod"
+  }
+}

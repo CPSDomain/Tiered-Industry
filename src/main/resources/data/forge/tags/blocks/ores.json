@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:ores/lithium",
+    "#forge:ores/naquadah",
+    "#forge:ores/cryonite",
+    "#forge:ores/abyssal_pearl",
+    "#forge:ores/aether_crystal",
+    "#forge:ores/resonance_crystal",
+    "#forge:ores/sunstone",
+    "#forge:ores/amber",
+    "#forge:ores/gravitite",
+    "#forge:ores/soul_crystal",
+    "#forge:ores/umbral",
+    "#forge:ores/voidstone"
+  ]
+}

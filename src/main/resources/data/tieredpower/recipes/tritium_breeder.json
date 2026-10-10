@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "SLS",
+    "LOL",
+    "SPS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "L": {
+      "tag": "forge:ingots/lithium"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "P": {
+      "item": "tieredpower:basic_gas_pipe"
+    }
+  },
+  "result": {
+    "item": "tieredpower:tritium_breeder",
+    "count": 1
+  }
+}

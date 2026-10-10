@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "QLQ",
+    "SDS",
+    "QCQ"
+  ],
+  "key": {
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "L": {
+      "item": "tieredpower:diamond_laser_lens"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "D": {
+      "item": "tieredpower:receiver_dish"
+    },
+    "C": {
+      "item": "tieredpower:quantum_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:laser_drill",
+    "count": 1
+  }
+}

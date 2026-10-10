@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GMG",
+    "SBS",
+    " S "
+  ],
+  "key": {
+    "G": {
+      "tag": "forge:plates/gold"
+    },
+    "M": {
+      "item": "tieredpower:item_magnet"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "B": {
+      "item": "tieredpower:portable_battery"
+    }
+  },
+  "result": {
+    "item": "tieredpower:advanced_item_magnet",
+    "count": 1
+  }
+}

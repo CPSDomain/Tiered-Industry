@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tieredpower:guardian_heart"
+    },
+    {
+      "item": "tieredpower:speed_upgrade"
+    },
+    {
+      "item": "tieredpower:speed_upgrade"
+    },
+    {
+      "item": "tieredpower:speed_upgrade"
+    },
+    {
+      "item": "tieredpower:speed_upgrade"
+    }
+  ],
+  "result": {
+    "item": "tieredpower:speed_upgrade_2",
+    "count": 4
+  }
+}

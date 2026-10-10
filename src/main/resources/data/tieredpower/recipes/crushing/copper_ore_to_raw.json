@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "tag": "forge:ores/copper"
+  },
+  "result": {
+    "item": "minecraft:raw_copper",
+    "count": 5
+  },
+  "time": 80
+}

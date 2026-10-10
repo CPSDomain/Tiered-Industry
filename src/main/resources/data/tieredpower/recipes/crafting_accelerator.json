@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CUC",
+    "UAU",
+    "CUC"
+  ],
+  "key": {
+    "C": {
+      "item": "tieredpower:matrix_casing"
+    },
+    "U": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "A": {
+      "item": "tieredpower:molecular_assembler"
+    }
+  },
+  "result": {
+    "item": "tieredpower:crafting_accelerator",
+    "count": 1
+  }
+}

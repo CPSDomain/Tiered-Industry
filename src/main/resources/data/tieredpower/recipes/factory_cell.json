@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SGS",
+    "URU",
+    "SGS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "G": {
+      "tag": "forge:glass"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    },
+    "U": {
+      "tag": "forge:ingots/superconductor"
+    }
+  },
+  "result": {
+    "item": "tieredpower:factory_cell",
+    "count": 1
+  }
+}

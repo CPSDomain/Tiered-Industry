@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " R ",
+    "SGS",
+    "SBS"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:lightning_rod"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "B": {
+      "item": "tieredpower:battery_box"
+    }
+  },
+  "result": {
+    "item": "tieredpower:ore_scanner",
+    "count": 1
+  }
+}

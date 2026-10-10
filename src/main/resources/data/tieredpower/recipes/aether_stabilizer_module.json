@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ACA",
+    "CMC",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "item": "tieredpower:aether_crystal"
+    },
+    "C": {
+      "item": "tieredpower:cryonite_shard"
+    },
+    "M": {
+      "item": "tieredpower:flight_module"
+    }
+  },
+  "result": {
+    "item": "tieredpower:aether_stabilizer_module",
+    "count": 1
+  }
+}

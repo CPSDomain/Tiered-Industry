@@ -1,0 +1,10 @@
+{
+  "type": "tieredpower:purifying",
+  "ingredient": {
+    "tag": "forge:raw_materials/iron"
+  },
+  "result": {
+    "item": "tieredpower:iron_dust",
+    "count": 3
+  }
+}

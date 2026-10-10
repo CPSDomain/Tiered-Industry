@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "QSQ",
+    "SBS",
+    "QSQ"
+  ],
+  "key": {
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "S": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "B": {
+      "item": "tieredpower:ultimate_battery_box"
+    }
+  },
+  "result": {
+    "item": "tieredpower:quantum_power_core",
+    "count": 1
+  }
+}

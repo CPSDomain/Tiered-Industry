@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " D ",
+    "SCS"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:dropper"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "C": {
+      "item": "tieredpower:storage_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:export_bus",
+    "count": 1
+  }
+}

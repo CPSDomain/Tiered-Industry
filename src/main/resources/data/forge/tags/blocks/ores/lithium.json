@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "tieredpower:lithium_ore",
+    "tieredpower:deepslate_lithium_ore"
+  ]
+}

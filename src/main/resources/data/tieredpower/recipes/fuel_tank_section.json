@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "HHH",
+    "HTH",
+    "HHH"
+  ],
+  "key": {
+    "H": {
+      "item": "tieredpower:hull_plate"
+    },
+    "T": {
+      "item": "tieredpower:quantum_fluid_tank"
+    }
+  },
+  "result": {
+    "item": "tieredpower:fuel_tank_section",
+    "count": 1
+  }
+}

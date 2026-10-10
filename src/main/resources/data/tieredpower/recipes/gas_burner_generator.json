@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "PFP",
+    "CGC",
+    "PBP"
+  ],
+  "key": {
+    "P": {
+      "tag": "forge:plates/steel"
+    },
+    "F": {
+      "item": "minecraft:fire_charge"
+    },
+    "C": {
+      "item": "tieredpower:gold_cable"
+    },
+    "G": {
+      "item": "tieredpower:coal_generator"
+    },
+    "B": {
+      "item": "tieredpower:basic_gas_pipe"
+    }
+  },
+  "result": {
+    "item": "tieredpower:gas_burner_generator",
+    "count": 1
+  }
+}

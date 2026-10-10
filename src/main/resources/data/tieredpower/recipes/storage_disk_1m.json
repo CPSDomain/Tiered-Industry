@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SDS",
+    "DUD",
+    "SDS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "D": {
+      "item": "tieredpower:storage_disk_256k"
+    },
+    "U": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "tieredpower:storage_disk_1m",
+    "count": 1
+  }
+}
