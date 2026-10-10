@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "tag": "forge:ores/sunstone"
+  },
+  "result": {
+    "item": "tieredpower:sunstone",
+    "count": 3
+  },
+  "time": 80
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "MQM",
+    "QBQ",
+    "MQM"
+  ],
+  "key": {
+    "M": {
+      "item": "tieredpower:gravitite"
+    },
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "B": {
+      "item": "minecraft:diamond_pickaxe"
+    }
+  },
+  "result": {
+    "item": "tieredpower:haste_module",
+    "count": 1
+  }
+}

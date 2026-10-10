@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "SPS",
+    "SRS",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "P": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "C": {
+      "item": "tieredpower:copper_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:block_breaker",
+    "count": 1
+  }
+}

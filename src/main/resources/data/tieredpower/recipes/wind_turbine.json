@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "PSP",
+    "SGS",
+    "PCP"
+  ],
+  "key": {
+    "P": {
+      "tag": "forge:plates/steel"
+    },
+    "S": {
+      "tag": "forge:ingots/steel"
+    },
+    "G": {
+      "item": "tieredpower:coal_generator"
+    },
+    "C": {
+      "item": "tieredpower:copper_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:wind_turbine",
+    "count": 1
+  }
+}

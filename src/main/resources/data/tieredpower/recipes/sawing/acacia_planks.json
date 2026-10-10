@@ -1,0 +1,14 @@
+{
+  "type": "tieredpower:sawing",
+  "ingredient": {
+    "tag": "minecraft:acacia_logs"
+  },
+  "result": {
+    "item": "minecraft:acacia_planks",
+    "count": 6
+  },
+  "secondary": {
+    "item": "tieredpower:sawdust",
+    "count": 1
+  }
+}

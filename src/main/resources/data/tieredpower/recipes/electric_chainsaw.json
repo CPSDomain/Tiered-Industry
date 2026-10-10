@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " XS",
+    "SBS",
+    "CS "
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:iron_axe"
+    },
+    "S": {
+      "tag": "forge:ingots/steel"
+    },
+    "B": {
+      "item": "tieredpower:battery_box"
+    },
+    "C": {
+      "item": "tieredpower:copper_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:electric_chainsaw",
+    "count": 1
+  }
+}

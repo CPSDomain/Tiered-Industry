@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "tieredpower:plutonium_dust"
+  },
+  "result": "tieredpower:plutonium_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}

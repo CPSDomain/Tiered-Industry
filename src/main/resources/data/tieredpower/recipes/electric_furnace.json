@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "ICI",
+    "RFR",
+    "IWI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    },
+    "W": {
+      "item": "tieredpower:copper_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:electric_furnace",
+    "count": 1
+  }
+}

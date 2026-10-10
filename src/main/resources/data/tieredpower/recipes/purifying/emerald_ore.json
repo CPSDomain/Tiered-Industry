@@ -1,0 +1,10 @@
+{
+  "type": "tieredpower:purifying",
+  "ingredient": {
+    "tag": "forge:ores/emerald"
+  },
+  "result": {
+    "item": "minecraft:emerald",
+    "count": 3
+  }
+}

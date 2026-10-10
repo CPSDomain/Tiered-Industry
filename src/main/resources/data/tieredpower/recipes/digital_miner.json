@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SOS",
+    "FQF",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "O": {
+      "item": "tieredpower:ore_scanner"
+    },
+    "F": {
+      "item": "tieredpower:item_filter"
+    },
+    "Q": {
+      "item": "tieredpower:quarry"
+    },
+    "C": {
+      "item": "tieredpower:gold_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:digital_miner",
+    "count": 1
+  }
+}

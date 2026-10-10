@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "entries": [
+    "tieredpower:address_tablet_desert_pyramid",
+    "tieredpower:address_tablet_jungle_temple",
+    "tieredpower:address_tablet_stronghold_library",
+    "tieredpower:address_tablet_stronghold_corridor",
+    "tieredpower:address_tablet_ancient_city",
+    "tieredpower:address_tablet_shipwreck_treasure",
+    "tieredpower:address_tablet_buried_treasure",
+    "tieredpower:address_tablet_woodland_mansion",
+    "tieredpower:address_tablet_bastion_treasure",
+    "tieredpower:address_tablet_end_city_treasure",
+    "tieredpower:address_tablet_simple_dungeon",
+    "tieredpower:address_tablet_abandoned_mineshaft",
+    "tieredpower:address_tablet_ruined_portal",
+    "tieredpower:address_tablet_pillager_outpost",
+    "tieredpower:address_tablet_underwater_ruin_big",
+    "tieredpower:address_tablet_igloo_chest",
+    "tieredpower:address_tablet_nether_bridge"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "SAS",
+    "LHL",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "A": {
+      "item": "minecraft:iron_axe"
+    },
+    "L": {
+      "tag": "minecraft:saplings"
+    },
+    "H": {
+      "item": "minecraft:hopper"
+    },
+    "C": {
+      "item": "tieredpower:copper_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:tree_farm",
+    "count": 1
+  }
+}

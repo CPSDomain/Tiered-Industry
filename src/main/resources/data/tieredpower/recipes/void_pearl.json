@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "VVV",
+    "VEV",
+    "VVV"
+  ],
+  "key": {
+    "V": {
+      "item": "tieredpower:void_shard"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "result": {
+    "item": "tieredpower:void_pearl",
+    "count": 1
+  }
+}

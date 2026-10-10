@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "DGD",
+    "GTG",
+    "DGD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "T": {
+      "item": "tieredpower:advanced_fluid_tank"
+    }
+  },
+  "result": {
+    "item": "tieredpower:elite_fluid_tank",
+    "count": 1
+  }
+}

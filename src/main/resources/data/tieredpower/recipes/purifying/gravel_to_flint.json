@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:purifying",
+  "ingredient": {
+    "item": "minecraft:gravel"
+  },
+  "result": {
+    "item": "minecraft:flint",
+    "count": 1
+  },
+  "time": 40
+}

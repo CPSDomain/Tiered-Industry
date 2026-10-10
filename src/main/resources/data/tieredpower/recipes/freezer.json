@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "SPS",
+    "CBC",
+    "SRS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:ingots/steel"
+    },
+    "P": {
+      "item": "minecraft:packed_ice"
+    },
+    "C": {
+      "item": "tieredpower:copper_cable"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "tieredpower:freezer",
+    "count": 1
+  }
+}

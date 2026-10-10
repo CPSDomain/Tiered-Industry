@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "item": "minecraft:clay"
+  },
+  "result": {
+    "item": "minecraft:clay_ball",
+    "count": 4
+  },
+  "time": 40
+}

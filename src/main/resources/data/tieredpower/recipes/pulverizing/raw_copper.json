@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:pulverizing",
+  "ingredient": {
+    "tag": "forge:raw_materials/copper"
+  },
+  "result": {
+    "item": "tieredpower:copper_dust",
+    "count": 2
+  },
+  "time": 100
+}

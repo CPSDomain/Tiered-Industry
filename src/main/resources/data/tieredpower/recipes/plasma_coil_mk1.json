@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SMS",
+    "MCM",
+    "SMS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "C": {
+      "item": "minecraft:diamond_block"
+    },
+    "M": {
+      "item": "tieredpower:magnet_coil"
+    }
+  },
+  "result": {
+    "item": "tieredpower:plasma_coil_mk1",
+    "count": 1
+  }
+}

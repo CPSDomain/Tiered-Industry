@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "RCR",
+    "QMQ",
+    "SKS"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:repeater"
+    },
+    "C": {
+      "item": "minecraft:comparator"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    "M": {
+      "item": "tieredpower:storage_monitor"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "K": {
+      "item": "tieredpower:storage_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:logic_controller",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "tag": "forge:ores/umbral"
+  },
+  "result": {
+    "item": "tieredpower:umbral_shard",
+    "count": 3
+  },
+  "time": 80
+}

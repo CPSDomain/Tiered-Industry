@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "PTP",
+    "PJP",
+    "B B"
+  ],
+  "key": {
+    "P": {
+      "tag": "forge:plates/steel"
+    },
+    "T": {
+      "item": "tieredpower:basic_fluid_tank"
+    },
+    "J": {
+      "item": "tieredpower:jetpack"
+    },
+    "B": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "tieredpower:hydrogen_jetpack",
+    "count": 1
+  }
+}

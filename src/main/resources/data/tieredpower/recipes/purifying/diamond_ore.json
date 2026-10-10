@@ -1,0 +1,10 @@
+{
+  "type": "tieredpower:purifying",
+  "ingredient": {
+    "tag": "forge:ores/diamond"
+  },
+  "result": {
+    "item": "minecraft:diamond",
+    "count": 3
+  }
+}

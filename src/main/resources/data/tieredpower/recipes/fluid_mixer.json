@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "SBS",
+    "CMC",
+    "SLS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:ingots/steel"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "C": {
+      "item": "tieredpower:copper_cable"
+    },
+    "M": {
+      "item": "minecraft:cauldron"
+    },
+    "L": {
+      "item": "minecraft:lava_bucket"
+    }
+  },
+  "result": {
+    "item": "tieredpower:fluid_mixer",
+    "count": 1
+  }
+}

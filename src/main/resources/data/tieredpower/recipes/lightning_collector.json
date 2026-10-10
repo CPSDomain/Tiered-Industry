@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "CLC",
+    "SBS",
+    "CGC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:copper_block"
+    },
+    "L": {
+      "item": "minecraft:lightning_rod"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "B": {
+      "item": "tieredpower:elite_battery_box"
+    },
+    "G": {
+      "item": "tieredpower:gold_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:lightning_collector",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "tieredpower:sawing",
+  "ingredient": {
+    "tag": "minecraft:mangrove_logs"
+  },
+  "result": {
+    "item": "minecraft:mangrove_planks",
+    "count": 6
+  },
+  "secondary": {
+    "item": "tieredpower:sawdust",
+    "count": 1
+  }
+}

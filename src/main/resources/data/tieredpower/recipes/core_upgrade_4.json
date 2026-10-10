@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MXM",
+    "XPX",
+    "MXM"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:nether_star"
+    },
+    "M": {
+      "item": "tieredpower:quantum_power_core"
+    },
+    "P": {
+      "item": "tieredpower:core_upgrade_3"
+    }
+  },
+  "result": {
+    "item": "tieredpower:core_upgrade_4",
+    "count": 1
+  }
+}

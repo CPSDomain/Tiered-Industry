@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "LGL",
+    "SBS",
+    "SCS"
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:lightning_rod"
+    },
+    "G": {
+      "item": "minecraft:ghast_tear"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "B": {
+      "item": "tieredpower:lightning_collector"
+    },
+    "C": {
+      "item": "tieredpower:gold_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:storm_caller",
+    "count": 1
+  }
+}

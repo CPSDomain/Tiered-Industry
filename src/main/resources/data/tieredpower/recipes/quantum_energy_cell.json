@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "QXQ",
+    "XSX",
+    "QXQ"
+  ],
+  "key": {
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "X": {
+      "item": "tieredpower:ultimate_energy_cell"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "tieredpower:quantum_energy_cell",
+    "count": 1
+  }
+}

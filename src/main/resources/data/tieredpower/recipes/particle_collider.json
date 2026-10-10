@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "QMQ",
+    "PCP",
+    "QMQ"
+  ],
+  "key": {
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "M": {
+      "item": "tieredpower:magnet_coil"
+    },
+    "P": {
+      "item": "tieredpower:quantum_gas_pipe"
+    },
+    "C": {
+      "item": "tieredpower:quantum_power_core"
+    }
+  },
+  "result": {
+    "item": "tieredpower:particle_collider",
+    "count": 1
+  }
+}

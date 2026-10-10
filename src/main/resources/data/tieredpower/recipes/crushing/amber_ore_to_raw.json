@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "tag": "forge:ores/amber"
+  },
+  "result": {
+    "item": "tieredpower:amber",
+    "count": 4
+  },
+  "time": 80
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "UDU",
+    "EPE",
+    "UDU"
+  ],
+  "key": {
+    "U": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "P": {
+      "item": "tieredpower:crafting_upgrade_advanced"
+    }
+  },
+  "result": {
+    "item": "tieredpower:crafting_upgrade_elite",
+    "count": 1
+  }
+}

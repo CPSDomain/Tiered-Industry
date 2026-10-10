@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tieredpower:naquadah_block"
+    }
+  ],
+  "result": {
+    "item": "tieredpower:naquadah_ingot",
+    "count": 9
+  }
+}

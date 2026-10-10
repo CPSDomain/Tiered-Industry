@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "PDP",
+    "DCD",
+    "PDP"
+  ],
+  "key": {
+    "P": {
+      "item": "tieredpower:advanced_solar_panel"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "C": {
+      "item": "tieredpower:diamond_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:elite_solar_panel",
+    "count": 1
+  }
+}

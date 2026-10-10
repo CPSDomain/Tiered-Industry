@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:dusts/iron",
+    "#forge:dusts/gold",
+    "#forge:dusts/copper",
+    "#forge:dusts/lithium",
+    "#forge:dusts/salt",
+    "#forge:dusts/plutonium",
+    "#forge:dusts/naquadah"
+  ]
+}

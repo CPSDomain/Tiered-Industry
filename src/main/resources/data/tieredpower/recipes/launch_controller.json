@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GGG",
+    "RCR",
+    "SSS"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "C": {
+      "item": "tieredpower:guidance_computer"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    }
+  },
+  "result": {
+    "item": "tieredpower:launch_controller",
+    "count": 1
+  }
+}

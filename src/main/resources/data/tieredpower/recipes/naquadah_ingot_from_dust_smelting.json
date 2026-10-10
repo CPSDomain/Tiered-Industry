@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "tag": "forge:dusts/naquadah"
+  },
+  "result": "tieredpower:naquadah_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}

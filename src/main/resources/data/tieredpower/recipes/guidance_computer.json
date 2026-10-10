@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SRS",
+    "TAT",
+    "SRS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    },
+    "T": {
+      "item": "tieredpower:storage_terminal"
+    },
+    "A": {
+      "item": "tieredpower:molecular_assembler"
+    }
+  },
+  "result": {
+    "item": "tieredpower:guidance_computer",
+    "count": 1
+  }
+}

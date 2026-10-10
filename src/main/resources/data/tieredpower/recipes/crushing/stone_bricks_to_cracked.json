@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "item": "minecraft:stone_bricks"
+  },
+  "result": {
+    "item": "minecraft:cracked_stone_bricks",
+    "count": 1
+  },
+  "time": 40
+}

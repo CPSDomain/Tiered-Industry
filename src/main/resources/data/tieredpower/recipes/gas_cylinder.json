@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " V ",
+    "S S",
+    "SSS"
+  ],
+  "key": {
+    "V": {
+      "item": "minecraft:lever"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    }
+  },
+  "result": {
+    "item": "tieredpower:gas_cylinder",
+    "count": 1
+  }
+}

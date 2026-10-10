@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    "GRG",
+    " G "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:lightning_rod"
+    },
+    "G": {
+      "tag": "forge:plates/steel"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "tieredpower:drone_remote",
+    "count": 1
+  }
+}

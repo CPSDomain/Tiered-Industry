@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "tag": "forge:ores/resonance_crystal"
+  },
+  "result": {
+    "item": "tieredpower:resonance_crystal",
+    "count": 2
+  },
+  "time": 80
+}

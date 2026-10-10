@@ -1,0 +1,10 @@
+{
+  "type": "tieredpower:pulverizing",
+  "ingredient": {
+    "item": "tieredpower:depleted_fuel_rod"
+  },
+  "result": {
+    "item": "tieredpower:uranium_dust",
+    "count": 1
+  }
+}

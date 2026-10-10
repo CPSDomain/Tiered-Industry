@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "tag": "forge:ores/cryonite"
+  },
+  "result": {
+    "item": "tieredpower:cryonite_shard",
+    "count": 5
+  },
+  "time": 80
+}

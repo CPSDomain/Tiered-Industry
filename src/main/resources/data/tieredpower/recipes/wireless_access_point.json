@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " E ",
+    " I ",
+    "SCS"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "I": {
+      "item": "minecraft:iron_bars"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "C": {
+      "item": "tieredpower:storage_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:wireless_access_point",
+    "count": 1
+  }
+}

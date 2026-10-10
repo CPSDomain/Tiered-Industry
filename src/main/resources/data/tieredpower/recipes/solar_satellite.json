@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PSP",
+    "SCS",
+    "PSP"
+  ],
+  "key": {
+    "P": {
+      "item": "tieredpower:quantum_solar_panel"
+    },
+    "S": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "C": {
+      "item": "tieredpower:quantum_power_core"
+    }
+  },
+  "result": {
+    "item": "tieredpower:solar_satellite",
+    "count": 1
+  }
+}

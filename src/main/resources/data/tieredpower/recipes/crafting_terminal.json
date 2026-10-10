@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "T",
+    "C"
+  ],
+  "key": {
+    "T": {
+      "item": "tieredpower:storage_terminal"
+    },
+    "C": {
+      "item": "minecraft:crafting_table"
+    }
+  },
+  "result": {
+    "item": "tieredpower:crafting_terminal",
+    "count": 1
+  }
+}

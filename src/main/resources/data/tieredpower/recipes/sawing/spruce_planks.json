@@ -1,0 +1,14 @@
+{
+  "type": "tieredpower:sawing",
+  "ingredient": {
+    "tag": "minecraft:spruce_logs"
+  },
+  "result": {
+    "item": "minecraft:spruce_planks",
+    "count": 6
+  },
+  "secondary": {
+    "item": "tieredpower:sawdust",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SUS",
+    "SPS",
+    "SUS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:ingots/steel"
+    },
+    "U": {
+      "tag": "forge:ingots/uranium"
+    },
+    "P": {
+      "tag": "forge:ingots/plutonium"
+    }
+  },
+  "result": {
+    "item": "tieredpower:mox_fuel_rod",
+    "count": 2
+  }
+}

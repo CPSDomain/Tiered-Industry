@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:compressing",
+  "ingredient": {
+    "tag": "forge:ingots/iron"
+  },
+  "result": {
+    "item": "tieredpower:iron_plate",
+    "count": 1
+  },
+  "time": 80
+}

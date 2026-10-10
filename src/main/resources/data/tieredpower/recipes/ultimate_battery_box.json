@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "NCN",
+    "CBC",
+    "NSN"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "C": {
+      "item": "tieredpower:netherite_cable"
+    },
+    "B": {
+      "item": "tieredpower:elite_battery_box"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "tieredpower:ultimate_battery_box",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "CRC",
+    "SBS",
+    "SSS"
+  ],
+  "key": {
+    "C": {
+      "item": "tieredpower:copper_cable"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "S": {
+      "tag": "forge:ingots/steel"
+    },
+    "B": {
+      "item": "tieredpower:battery_box"
+    }
+  },
+  "result": {
+    "item": "tieredpower:portable_battery",
+    "count": 1
+  }
+}

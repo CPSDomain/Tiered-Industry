@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "item": "minecraft:sandstone"
+  },
+  "result": {
+    "item": "minecraft:sand",
+    "count": 4
+  },
+  "time": 60
+}

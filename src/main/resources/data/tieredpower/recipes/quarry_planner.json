@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " R ",
+    "IMI",
+    " I "
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone_torch"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "M": {
+      "item": "minecraft:map"
+    }
+  },
+  "result": {
+    "item": "tieredpower:quarry_planner",
+    "count": 1
+  }
+}

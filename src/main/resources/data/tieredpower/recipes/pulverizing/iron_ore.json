@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:pulverizing",
+  "ingredient": {
+    "tag": "forge:ores/iron"
+  },
+  "result": {
+    "item": "tieredpower:iron_dust",
+    "count": 2
+  },
+  "time": 100
+}

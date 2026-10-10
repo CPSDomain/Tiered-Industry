@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "BRB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "tieredpower:express_conveyor_belt"
+    },
+    "C": {
+      "item": "minecraft:comparator"
+    },
+    "R": {
+      "item": "minecraft:repeater"
+    }
+  },
+  "result": {
+    "item": "tieredpower:belt_splitter",
+    "count": 1
+  }
+}

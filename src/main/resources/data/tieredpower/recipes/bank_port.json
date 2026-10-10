@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "tieredpower:bank_casing"
+    },
+    {
+      "item": "tieredpower:diamond_cable"
+    }
+  ],
+  "result": {
+    "item": "tieredpower:bank_port",
+    "count": 1
+  }
+}

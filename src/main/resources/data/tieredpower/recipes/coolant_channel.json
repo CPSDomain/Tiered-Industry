@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "CGC",
+    "GBG",
+    "CGC"
+  ],
+  "key": {
+    "C": {
+      "tag": "forge:plates/copper"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "result": {
+    "item": "tieredpower:coolant_channel",
+    "count": 1
+  }
+}

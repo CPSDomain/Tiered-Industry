@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "tieredpower:lithium_ore",
+    "tieredpower:deepslate_lithium_ore",
+    "tieredpower:uranium_ore",
+    "tieredpower:deepslate_uranium_ore",
+    "tieredpower:cryonite_ore",
+    "tieredpower:abyssal_pearl_ore",
+    "tieredpower:aether_crystal_ore",
+    "tieredpower:sunstone_ore",
+    "tieredpower:amber_ore",
+    "tieredpower:soul_crystal_ore"
+  ]
+}

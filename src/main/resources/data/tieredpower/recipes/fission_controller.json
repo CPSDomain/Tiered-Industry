@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "CDC",
+    "DFD",
+    "CDC"
+  ],
+  "key": {
+    "C": {
+      "item": "tieredpower:fission_casing"
+    },
+    "D": {
+      "item": "tieredpower:diamond_cable"
+    },
+    "F": {
+      "item": "tieredpower:fission_reactor"
+    }
+  },
+  "result": {
+    "item": "tieredpower:fission_controller",
+    "count": 1
+  }
+}

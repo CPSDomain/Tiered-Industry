@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "CDC",
+    "DBD",
+    "CDC"
+  ],
+  "key": {
+    "C": {
+      "item": "tieredpower:bank_casing"
+    },
+    "D": {
+      "item": "tieredpower:diamond_cable"
+    },
+    "B": {
+      "item": "tieredpower:advanced_battery_box"
+    }
+  },
+  "result": {
+    "item": "tieredpower:bank_controller",
+    "count": 1
+  }
+}

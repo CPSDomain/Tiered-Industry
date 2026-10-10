@@ -1,0 +1,47 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:saplings",
+    "#minecraft:leaves",
+    "#minecraft:flowers",
+    {
+      "id": "#forge:crops",
+      "required": false
+    },
+    {
+      "id": "#forge:seeds",
+      "required": false
+    },
+    "minecraft:wheat",
+    "minecraft:wheat_seeds",
+    "minecraft:carrot",
+    "minecraft:potato",
+    "minecraft:poisonous_potato",
+    "minecraft:beetroot",
+    "minecraft:beetroot_seeds",
+    "minecraft:melon_slice",
+    "minecraft:melon_seeds",
+    "minecraft:pumpkin",
+    "minecraft:pumpkin_seeds",
+    "minecraft:sugar_cane",
+    "minecraft:kelp",
+    "minecraft:dried_kelp",
+    "minecraft:cactus",
+    "minecraft:bamboo",
+    "minecraft:apple",
+    "minecraft:sweet_berries",
+    "minecraft:glow_berries",
+    "minecraft:grass",
+    "minecraft:fern",
+    "minecraft:vine",
+    "minecraft:moss_block",
+    "minecraft:rotten_flesh",
+    "minecraft:spider_eye",
+    "minecraft:nether_wart",
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
+    "minecraft:lily_pad",
+    "minecraft:seagrass",
+    "minecraft:hay_block"
+  ]
+}

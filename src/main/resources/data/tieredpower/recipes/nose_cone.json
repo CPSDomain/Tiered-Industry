@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " H ",
+    "H H",
+    "HHH"
+  ],
+  "key": {
+    "H": {
+      "item": "tieredpower:hull_plate"
+    }
+  },
+  "result": {
+    "item": "tieredpower:nose_cone",
+    "count": 1
+  }
+}

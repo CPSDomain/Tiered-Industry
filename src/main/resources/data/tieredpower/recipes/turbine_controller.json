@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CRC",
+    "MTM",
+    "CRC"
+  ],
+  "key": {
+    "C": {
+      "item": "tieredpower:turbine_casing"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "M": {
+      "item": "minecraft:comparator"
+    },
+    "T": {
+      "item": "tieredpower:steam_turbine"
+    }
+  },
+  "result": {
+    "item": "tieredpower:turbine_controller",
+    "count": 1
+  }
+}

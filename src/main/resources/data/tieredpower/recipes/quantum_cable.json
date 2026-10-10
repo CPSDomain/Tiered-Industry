@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "WWW",
+    "WQW",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "tieredpower:netherite_cable"
+    },
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    }
+  },
+  "result": {
+    "item": "tieredpower:quantum_cable",
+    "count": 8
+  }
+}

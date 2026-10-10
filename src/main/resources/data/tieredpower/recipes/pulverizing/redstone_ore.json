@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:pulverizing",
+  "ingredient": {
+    "tag": "forge:ores/redstone"
+  },
+  "result": {
+    "item": "minecraft:redstone",
+    "count": 8
+  },
+  "time": 100
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "PPP",
+    "PQP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "tieredpower:ultimate_item_pipe"
+    },
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    }
+  },
+  "result": {
+    "item": "tieredpower:quantum_item_pipe",
+    "count": 8
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "PPP",
+    "PXP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "tieredpower:basic_gas_pipe"
+    },
+    "X": {
+      "tag": "forge:ingots/steel"
+    }
+  },
+  "result": {
+    "item": "tieredpower:advanced_gas_pipe",
+    "count": 8
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "SNS",
+    "DXD",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:ingots/steel"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "D": {
+      "item": "minecraft:diamond_block"
+    },
+    "X": {
+      "item": "minecraft:nether_star"
+    },
+    "C": {
+      "item": "tieredpower:diamond_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:fusion_reactor",
+    "count": 1
+  }
+}

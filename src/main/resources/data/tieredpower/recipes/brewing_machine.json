@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SBS",
+    "GCG",
+    "SWS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "B": {
+      "item": "minecraft:brewing_stand"
+    },
+    "G": {
+      "item": "minecraft:glass_bottle"
+    },
+    "C": {
+      "item": "tieredpower:copper_cable"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "tieredpower:brewing_machine",
+    "count": 1
+  }
+}

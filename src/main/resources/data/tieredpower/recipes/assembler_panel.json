@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tieredpower:molecular_assembler"
+    }
+  ],
+  "result": {
+    "item": "tieredpower:assembler_panel",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:pulverizing",
+  "ingredient": {
+    "tag": "forge:raw_materials/naquadah"
+  },
+  "result": {
+    "item": "tieredpower:naquadah_dust",
+    "count": 2
+  },
+  "time": 100
+}

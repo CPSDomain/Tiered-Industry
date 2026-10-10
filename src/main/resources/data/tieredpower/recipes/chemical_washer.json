@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "SPS",
+    "DOD",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "P": {
+      "item": "tieredpower:basic_gas_pipe"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "O": {
+      "item": "tieredpower:ore_purifier"
+    },
+    "C": {
+      "item": "tieredpower:gold_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:chemical_washer",
+    "count": 1
+  }
+}

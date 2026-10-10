@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GXG",
+    "XCX",
+    "YYY"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "X": {
+      "item": "minecraft:redstone_block"
+    },
+    "C": {
+      "item": "minecraft:diamond"
+    },
+    "Y": {
+      "tag": "forge:plates/steel"
+    }
+  },
+  "result": {
+    "item": "tieredpower:storage_disk_64k",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "STS",
+    "THT",
+    "STS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "T": {
+      "item": "tieredpower:basic_fluid_tank"
+    },
+    "H": {
+      "item": "minecraft:hopper"
+    }
+  },
+  "result": {
+    "item": "tieredpower:fluid_buffer",
+    "count": 1
+  }
+}

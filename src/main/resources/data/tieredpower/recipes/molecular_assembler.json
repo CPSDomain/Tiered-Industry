@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SGS",
+    "CTC",
+    "SGS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "C": {
+      "item": "minecraft:crafting_table"
+    },
+    "T": {
+      "tag": "forge:ingots/superconductor"
+    }
+  },
+  "result": {
+    "item": "tieredpower:molecular_assembler",
+    "count": 1
+  }
+}

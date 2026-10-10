@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "KKK",
+    "PRP"
+  ],
+  "key": {
+    "K": {
+      "item": "minecraft:dried_kelp"
+    },
+    "P": {
+      "tag": "forge:plates/iron"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "tieredpower:conveyor_belt",
+    "count": 6
+  }
+}

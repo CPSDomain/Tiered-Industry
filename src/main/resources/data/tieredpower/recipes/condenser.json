@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "PGP",
+    "IBI",
+    "PGP"
+  ],
+  "key": {
+    "P": {
+      "tag": "forge:plates/copper"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "I": {
+      "item": "minecraft:ice"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "result": {
+    "item": "tieredpower:condenser",
+    "count": 1
+  }
+}

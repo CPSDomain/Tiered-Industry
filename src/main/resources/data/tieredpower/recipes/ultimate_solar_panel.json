@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "PUP",
+    "UCU",
+    "PUP"
+  ],
+  "key": {
+    "P": {
+      "item": "tieredpower:elite_solar_panel"
+    },
+    "U": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "C": {
+      "item": "tieredpower:netherite_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:ultimate_solar_panel",
+    "count": 1
+  }
+}

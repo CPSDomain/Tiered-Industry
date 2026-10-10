@@ -1,0 +1,12 @@
+{
+  "type": "tieredpower:compressing",
+  "ingredient": {
+    "item": "minecraft:snowball"
+  },
+  "result": {
+    "item": "minecraft:snow_block",
+    "count": 1
+  },
+  "count": 4,
+  "time": 40
+}

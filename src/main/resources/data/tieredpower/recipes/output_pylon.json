@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " G ",
+    "SBS",
+    "SCS"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:orange_stained_glass"
+    },
+    "S": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "B": {
+      "item": "tieredpower:ultimate_battery_box"
+    },
+    "C": {
+      "item": "tieredpower:quantum_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:output_pylon",
+    "count": 1
+  }
+}

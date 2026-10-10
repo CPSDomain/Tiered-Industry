@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "tieredpower:reactor_casing"
+    },
+    {
+      "item": "minecraft:hopper"
+    }
+  ],
+  "result": {
+    "item": "tieredpower:reactor_fuel_port",
+    "count": 1
+  }
+}

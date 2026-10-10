@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "PPP",
+    "PXP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "tieredpower:elite_fluid_pipe"
+    },
+    "X": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "tieredpower:ultimate_fluid_pipe",
+    "count": 8
+  }
+}

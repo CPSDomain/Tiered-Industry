@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RSR",
+    "SNS",
+    "RSR"
+  ],
+  "key": {
+    "R": {
+      "item": "tieredpower:resonance_crystal"
+    },
+    "S": {
+      "item": "tieredpower:speed_upgrade"
+    },
+    "N": {
+      "tag": "forge:ingots/naquadah"
+    }
+  },
+  "result": {
+    "item": "tieredpower:speed_upgrade_2",
+    "count": 2
+  }
+}

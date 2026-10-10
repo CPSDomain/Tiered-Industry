@@ -1,0 +1,27 @@
+{
+  "type": "tieredpower:alloying",
+  "inputs": [
+    {
+      "ingredient": [
+        {
+          "tag": "forge:ingots/iron"
+        },
+        {
+          "tag": "forge:dusts/iron"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "tag": "minecraft:coals"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "item": "tieredpower:steel_ingot",
+    "count": 1
+  },
+  "time": 200
+}

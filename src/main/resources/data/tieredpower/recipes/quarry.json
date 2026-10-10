@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "SPS",
+    "CRC",
+    "SHS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:ingots/steel"
+    },
+    "P": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "C": {
+      "item": "tieredpower:gold_cable"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    },
+    "H": {
+      "item": "minecraft:hopper"
+    }
+  },
+  "result": {
+    "item": "tieredpower:quarry",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MXM",
+    "XPX",
+    "MXM"
+  ],
+  "key": {
+    "M": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "X": {
+      "item": "tieredpower:quantum_power_core"
+    },
+    "P": {
+      "item": "tieredpower:crafting_upgrade_elite"
+    }
+  },
+  "result": {
+    "item": "tieredpower:crafting_upgrade_quantum",
+    "count": 1
+  }
+}

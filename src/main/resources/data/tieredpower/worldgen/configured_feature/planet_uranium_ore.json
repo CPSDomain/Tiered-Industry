@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 6,
+    "discard_chance_on_air_exposure": 0.0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
+        },
+        "state": {
+          "Name": "tieredpower:uranium_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
+        },
+        "state": {
+          "Name": "tieredpower:deepslate_uranium_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:netherrack"
+        },
+        "state": {
+          "Name": "tieredpower:uranium_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:basalt"
+        },
+        "state": {
+          "Name": "tieredpower:deepslate_uranium_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:sandstone"
+        },
+        "state": {
+          "Name": "tieredpower:uranium_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:terracotta"
+        },
+        "state": {
+          "Name": "tieredpower:uranium_ore"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "tieredpower:compressing",
+  "ingredient": {
+    "tag": "forge:dusts/wood"
+  },
+  "result": {
+    "item": "minecraft:paper",
+    "count": 1
+  },
+  "count": 4,
+  "time": 60
+}

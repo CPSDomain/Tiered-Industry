@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SCS",
+    "PDP",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "C": {
+      "item": "minecraft:comparator"
+    },
+    "P": {
+      "item": "tieredpower:blank_pattern"
+    },
+    "D": {
+      "item": "tieredpower:crafting_cpu"
+    }
+  },
+  "result": {
+    "item": "tieredpower:stock_keeper",
+    "count": 1
+  }
+}

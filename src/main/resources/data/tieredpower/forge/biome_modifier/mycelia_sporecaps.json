@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#tieredpower:planet_biomes",
+  "features": "tieredpower:mycelia_sporecaps",
+  "step": "vegetal_decoration"
+}

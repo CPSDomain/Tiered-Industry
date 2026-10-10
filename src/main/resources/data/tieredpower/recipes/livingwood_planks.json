@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tieredpower:livingwood_log"
+    }
+  ],
+  "result": {
+    "item": "tieredpower:livingwood_planks",
+    "count": 4
+  }
+}

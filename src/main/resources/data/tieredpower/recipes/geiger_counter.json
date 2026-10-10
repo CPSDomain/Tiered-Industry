@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " T ",
+    "ICI",
+    "IUI"
+  ],
+  "key": {
+    "T": {
+      "item": "minecraft:redstone_torch"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:comparator"
+    },
+    "U": {
+      "tag": "forge:ingots/uranium"
+    }
+  },
+  "result": {
+    "item": "tieredpower:geiger_counter",
+    "count": 1
+  }
+}

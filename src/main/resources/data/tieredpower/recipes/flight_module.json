@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "QXQ",
+    "SRS",
+    "QXQ"
+  ],
+  "key": {
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "X": {
+      "item": "minecraft:elytra"
+    },
+    "S": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "tieredpower:flight_module",
+    "count": 1
+  }
+}

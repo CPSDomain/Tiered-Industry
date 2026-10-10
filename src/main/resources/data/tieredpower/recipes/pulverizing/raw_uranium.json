@@ -1,0 +1,10 @@
+{
+  "type": "tieredpower:pulverizing",
+  "ingredient": {
+    "tag": "forge:raw_materials/uranium"
+  },
+  "result": {
+    "item": "tieredpower:uranium_dust",
+    "count": 2
+  }
+}

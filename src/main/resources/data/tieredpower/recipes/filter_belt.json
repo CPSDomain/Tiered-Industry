@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " H ",
+    "BRB"
+  ],
+  "key": {
+    "B": {
+      "item": "tieredpower:express_conveyor_belt"
+    },
+    "H": {
+      "item": "minecraft:hopper"
+    },
+    "R": {
+      "item": "minecraft:comparator"
+    }
+  },
+  "result": {
+    "item": "tieredpower:filter_belt",
+    "count": 2
+  }
+}

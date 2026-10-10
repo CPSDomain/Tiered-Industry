@@ -1,0 +1,22 @@
+{
+  "type": "tieredpower:alloying",
+  "inputs": [
+    {
+      "ingredient": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "count": 1
+    },
+    {
+      "ingredient": {
+        "tag": "forge:ingots/superconductor"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "item": "tieredpower:quantum_alloy_ingot",
+    "count": 2
+  },
+  "time": 400
+}

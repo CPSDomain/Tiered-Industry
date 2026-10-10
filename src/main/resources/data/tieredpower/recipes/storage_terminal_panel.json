@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tieredpower:storage_terminal"
+    }
+  ],
+  "result": {
+    "item": "tieredpower:storage_terminal_panel",
+    "count": 1
+  }
+}

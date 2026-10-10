@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "UEU",
+    "UJU",
+    "D D"
+  ],
+  "key": {
+    "U": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "E": {
+      "item": "tieredpower:advanced_battery_box"
+    },
+    "J": {
+      "item": "tieredpower:jetpack"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "tieredpower:advanced_jetpack",
+    "count": 1
+  }
+}

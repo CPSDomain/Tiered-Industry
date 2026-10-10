@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " G ",
+    "GXG",
+    " G "
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "X": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "tieredpower:iron_laser_lens",
+    "count": 1
+  }
+}

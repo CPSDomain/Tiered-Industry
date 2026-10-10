@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GGG",
+    "QNQ",
+    "QCQ"
+  ],
+  "key": {
+    "G": {
+      "item": "tieredpower:solar_glass"
+    },
+    "Q": {
+      "item": "tieredpower:quantum_solar_panel"
+    },
+    "N": {
+      "tag": "forge:ingots/naquadah"
+    },
+    "C": {
+      "item": "tieredpower:quantum_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:stellar_solar_panel",
+    "count": 1
+  }
+}

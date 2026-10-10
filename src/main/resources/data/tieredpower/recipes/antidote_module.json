@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "MQM",
+    "QBQ",
+    "MQM"
+  ],
+  "key": {
+    "M": {
+      "item": "tieredpower:witchroot"
+    },
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "B": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result": {
+    "item": "tieredpower:antidote_module",
+    "count": 1
+  }
+}

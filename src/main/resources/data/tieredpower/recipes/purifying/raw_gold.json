@@ -1,0 +1,10 @@
+{
+  "type": "tieredpower:purifying",
+  "ingredient": {
+    "tag": "forge:raw_materials/gold"
+  },
+  "result": {
+    "item": "tieredpower:gold_dust",
+    "count": 3
+  }
+}

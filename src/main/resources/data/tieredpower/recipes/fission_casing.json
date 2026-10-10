@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "PPP",
+    "PUP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "tag": "forge:plates/steel"
+    },
+    "U": {
+      "tag": "forge:ingots/uranium"
+    }
+  },
+  "result": {
+    "item": "tieredpower:fission_casing",
+    "count": 8
+  }
+}

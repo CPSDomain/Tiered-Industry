@@ -1,0 +1,11 @@
+{
+  "type": "tieredpower:crushing",
+  "ingredient": {
+    "tag": "forge:ores/coal"
+  },
+  "result": {
+    "item": "minecraft:coal",
+    "count": 3
+  },
+  "time": 80
+}

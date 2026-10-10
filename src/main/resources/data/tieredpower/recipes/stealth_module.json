@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "MQM",
+    "QBQ",
+    "MQM"
+  ],
+  "key": {
+    "M": {
+      "item": "tieredpower:umbral_shard"
+    },
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "B": {
+      "item": "minecraft:fermented_spider_eye"
+    }
+  },
+  "result": {
+    "item": "tieredpower:stealth_module",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "F F",
+    " C ",
+    "F F"
+  ],
+  "key": {
+    "F": {
+      "tag": "forge:plates/steel"
+    },
+    "C": {
+      "item": "minecraft:compass"
+    }
+  },
+  "result": {
+    "item": "tieredpower:utility_drone",
+    "count": 1
+  }
+}

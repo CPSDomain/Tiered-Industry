@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "NXN",
+    "XSX",
+    "NXN"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "X": {
+      "item": "tieredpower:advanced_energy_cell"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "tieredpower:ultimate_energy_cell",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "QCQ",
+    "AXA",
+    "QCQ"
+  ],
+  "key": {
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "C": {
+      "item": "tieredpower:quantum_power_core"
+    },
+    "X": {
+      "item": "minecraft:nether_star"
+    },
+    "A": {
+      "type": "forge:partial_nbt",
+      "item": "tieredpower:crafting_accelerator",
+      "nbt": "{BlockStateTag:{tier:\"3\"}}"
+    }
+  },
+  "result": {
+    "item": "tieredpower:overclock_accelerator",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SUS",
+    "SUS",
+    "SUS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:ingots/steel"
+    },
+    "U": {
+      "tag": "forge:ingots/uranium"
+    }
+  },
+  "result": {
+    "item": "tieredpower:uranium_fuel_rod",
+    "count": 2
+  }
+}

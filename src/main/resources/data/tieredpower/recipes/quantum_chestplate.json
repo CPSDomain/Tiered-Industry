@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "QJQ",
+    "QNQ",
+    "QEQ"
+  ],
+  "key": {
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "J": {
+      "item": "tieredpower:advanced_jetpack"
+    },
+    "N": {
+      "item": "minecraft:netherite_chestplate"
+    },
+    "E": {
+      "item": "tieredpower:quantum_power_core"
+    }
+  },
+  "result": {
+    "item": "tieredpower:quantum_chestplate",
+    "count": 1
+  }
+}

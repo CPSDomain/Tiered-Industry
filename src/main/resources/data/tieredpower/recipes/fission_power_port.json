@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "tieredpower:fission_casing"
+    },
+    {
+      "item": "tieredpower:diamond_cable"
+    }
+  ],
+  "result": {
+    "item": "tieredpower:fission_power_port",
+    "count": 1
+  }
+}

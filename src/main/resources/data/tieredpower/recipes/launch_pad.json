@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "YBY",
+    "SSS",
+    "SSS"
+  ],
+  "key": {
+    "Y": {
+      "item": "minecraft:yellow_dye"
+    },
+    "B": {
+      "item": "minecraft:black_dye"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    }
+  },
+  "result": {
+    "item": "tieredpower:launch_pad",
+    "count": 4
+  }
+}

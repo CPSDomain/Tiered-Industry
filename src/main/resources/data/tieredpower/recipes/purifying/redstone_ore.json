@@ -1,0 +1,10 @@
+{
+  "type": "tieredpower:purifying",
+  "ingredient": {
+    "tag": "forge:ores/redstone"
+  },
+  "result": {
+    "item": "minecraft:redstone",
+    "count": 10
+  }
+}

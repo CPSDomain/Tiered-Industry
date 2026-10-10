@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BSB",
+    "BDB"
+  ],
+  "key": {
+    "B": {
+      "item": "tieredpower:fast_conveyor_belt"
+    },
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "tieredpower:express_conveyor_belt",
+    "count": 4
+  }
+}

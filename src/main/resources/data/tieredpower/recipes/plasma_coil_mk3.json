@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SMS",
+    "MCM",
+    "SMS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:ingots/quantum_alloy"
+    },
+    "C": {
+      "item": "tieredpower:quantum_power_core"
+    },
+    "M": {
+      "item": "tieredpower:magnet_coil"
+    }
+  },
+  "result": {
+    "item": "tieredpower:plasma_coil_mk3",
+    "count": 1
+  }
+}

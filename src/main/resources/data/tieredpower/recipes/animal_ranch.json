@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "SWS",
+    "BHE",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    },
+    "H": {
+      "item": "minecraft:shears"
+    },
+    "E": {
+      "item": "minecraft:hay_block"
+    },
+    "C": {
+      "item": "tieredpower:copper_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:animal_ranch",
+    "count": 1
+  }
+}

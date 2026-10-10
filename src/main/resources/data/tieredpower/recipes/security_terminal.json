@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SGS",
+    "TKT",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "T": {
+      "item": "minecraft:tripwire_hook"
+    },
+    "K": {
+      "item": "minecraft:ender_eye"
+    },
+    "C": {
+      "item": "tieredpower:storage_cable"
+    }
+  },
+  "result": {
+    "item": "tieredpower:security_terminal",
+    "count": 1
+  }
+}

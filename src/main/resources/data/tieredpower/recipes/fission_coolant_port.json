@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "tieredpower:fission_casing"
+    },
+    {
+      "item": "tieredpower:basic_fluid_pipe"
+    }
+  ],
+  "result": {
+    "item": "tieredpower:fission_coolant_port",
+    "count": 1
+  }
+}
