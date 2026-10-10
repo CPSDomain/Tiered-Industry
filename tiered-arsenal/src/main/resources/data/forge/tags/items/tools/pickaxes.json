@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "tieredarsenal:copper_pickaxe",
+    "tieredarsenal:emerald_pickaxe",
+    "tieredarsenal:cobalt_pickaxe",
+    "tieredarsenal:titanium_pickaxe",
+    "tieredarsenal:infernium_pickaxe",
+    "tieredarsenal:aetherium_pickaxe"
+  ]
+}

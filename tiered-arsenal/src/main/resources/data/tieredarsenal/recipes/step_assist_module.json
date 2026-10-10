@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tieredarsenal:blank_module"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "tag": "minecraft:stairs"
+    }
+  ],
+  "result": {
+    "item": "tieredarsenal:step_assist_module"
+  }
+}

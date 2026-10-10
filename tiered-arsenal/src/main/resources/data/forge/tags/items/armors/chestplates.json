@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "tieredarsenal:copper_chestplate",
+    "tieredarsenal:emerald_chestplate",
+    "tieredarsenal:cobalt_chestplate",
+    "tieredarsenal:titanium_chestplate",
+    "tieredarsenal:infernium_chestplate",
+    "tieredarsenal:aetherium_chestplate"
+  ]
+}

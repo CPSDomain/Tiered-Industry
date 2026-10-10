@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tieredarsenal:cobalt_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "minecraft:iron_shovel"
+  },
+  "addition": {
+    "tag": "forge:ingots/cobalt"
+  },
+  "result": {
+    "item": "tieredarsenal:cobalt_shovel"
+  }
+}

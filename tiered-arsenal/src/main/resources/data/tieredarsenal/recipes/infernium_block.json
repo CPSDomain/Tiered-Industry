@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tieredarsenal:infernium_ingot"
+    }
+  },
+  "result": {
+    "item": "tieredarsenal:infernium_block"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tieredpower"
+    }
+  ],
+  "type": "tieredpower:pulverizing",
+  "ingredient": {
+    "tag": "forge:ingots/infernium"
+  },
+  "result": {
+    "item": "tieredarsenal:infernium_dust",
+    "count": 1
+  },
+  "time": 90
+}

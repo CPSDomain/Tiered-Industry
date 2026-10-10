@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "tieredpower"
+      }
+    }
+  ],
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "group": "infernium_ingot",
+  "ingredient": {
+    "item": "tieredarsenal:raw_infernium"
+  },
+  "result": "tieredarsenal:infernium_ingot",
+  "experience": 1.2,
+  "cookingtime": 100
+}

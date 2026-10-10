@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tieredarsenal:cobalt_ingot"
+    }
+  },
+  "result": {
+    "item": "tieredarsenal:cobalt_block"
+  }
+}

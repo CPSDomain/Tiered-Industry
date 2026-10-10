@@ -1,0 +1,16 @@
+{
+  "type": "tieredarsenal:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/desert_pyramid"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.12
+    }
+  ],
+  "item": "tieredarsenal:emerald_sword",
+  "min": 1,
+  "max": 1
+}

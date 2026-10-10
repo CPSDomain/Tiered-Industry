@@ -1,0 +1,16 @@
+{
+  "type": "tieredarsenal:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/simple_dungeon"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.1
+    }
+  ],
+  "item": "tieredarsenal:cobalt_upgrade_smithing_template",
+  "min": 1,
+  "max": 1
+}

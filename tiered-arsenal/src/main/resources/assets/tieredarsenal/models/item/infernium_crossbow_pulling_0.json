@@ -1,0 +1,6 @@
+{
+  "parent": "tieredarsenal:item/infernium_crossbow",
+  "textures": {
+    "layer0": "tieredarsenal:item/infernium_crossbow_pulling_0"
+  }
+}

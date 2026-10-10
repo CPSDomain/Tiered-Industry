@@ -1,0 +1,17 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tieredpower"
+    }
+  ],
+  "type": "tieredpower:pulverizing",
+  "ingredient": {
+    "tag": "forge:raw_materials/aetherium"
+  },
+  "result": {
+    "item": "tieredarsenal:aetherium_dust",
+    "count": 2
+  },
+  "time": 240
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "tieredarsenal:copper_warhammer",
+    "tieredarsenal:emerald_warhammer",
+    "tieredarsenal:iron_warhammer",
+    "tieredarsenal:cobalt_warhammer",
+    "tieredarsenal:titanium_warhammer",
+    "tieredarsenal:infernium_warhammer",
+    "tieredarsenal:aetherium_warhammer"
+  ]
+}

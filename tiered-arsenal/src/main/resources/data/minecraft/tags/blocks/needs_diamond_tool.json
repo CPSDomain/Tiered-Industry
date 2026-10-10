@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "tieredarsenal:titanium_ore",
+    "tieredarsenal:deepslate_titanium_ore",
+    "tieredarsenal:raw_titanium_block",
+    "tieredarsenal:titanium_block",
+    "tieredarsenal:nether_infernium_ore",
+    "tieredarsenal:raw_infernium_block",
+    "tieredarsenal:infernium_block"
+  ]
+}

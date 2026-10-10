@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "tieredarsenal:copper_sword",
+    "tieredarsenal:emerald_sword",
+    "tieredarsenal:cobalt_sword",
+    "tieredarsenal:titanium_sword",
+    "tieredarsenal:infernium_sword",
+    "tieredarsenal:aetherium_sword",
+    "tieredarsenal:copper_greatsword",
+    "tieredarsenal:emerald_greatsword",
+    "tieredarsenal:iron_greatsword",
+    "tieredarsenal:cobalt_greatsword",
+    "tieredarsenal:titanium_greatsword",
+    "tieredarsenal:infernium_greatsword",
+    "tieredarsenal:aetherium_greatsword",
+    "tieredarsenal:copper_dagger",
+    "tieredarsenal:emerald_dagger",
+    "tieredarsenal:iron_dagger",
+    "tieredarsenal:cobalt_dagger",
+    "tieredarsenal:titanium_dagger",
+    "tieredarsenal:infernium_dagger",
+    "tieredarsenal:aetherium_dagger"
+  ]
+}

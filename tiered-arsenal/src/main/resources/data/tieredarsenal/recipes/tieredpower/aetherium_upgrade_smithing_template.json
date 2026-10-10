@@ -1,0 +1,32 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tieredpower"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "XQX",
+    "PBP",
+    "XPX"
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:ingots/aetherium"
+    },
+    "B": {
+      "item": "tieredarsenal:infernium_block"
+    },
+    "P": {
+      "tag": "forge:ingots/superconductor"
+    },
+    "Q": {
+      "tag": "forge:ingots/quantum_alloy"
+    }
+  },
+  "result": {
+    "item": "tieredarsenal:aetherium_upgrade_smithing_template"
+  }
+}

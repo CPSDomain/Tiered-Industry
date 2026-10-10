@@ -1,0 +1,16 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tieredpower"
+    }
+  ],
+  "type": "tieredpower:purifying",
+  "ingredient": {
+    "tag": "forge:ores/aetherium"
+  },
+  "result": {
+    "item": "tieredarsenal:aetherium_dust",
+    "count": 3
+  }
+}

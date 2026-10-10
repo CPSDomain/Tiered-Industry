@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "item": "tieredarsenal:cobalt_upgrade_smithing_template"
+    },
+    "title": {
+      "translate": "advancements.tieredarsenal.first_upgrade.title"
+    },
+    "description": {
+      "translate": "advancements.tieredarsenal.first_upgrade.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_any": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tieredarsenal:cobalt_sword",
+              "tieredarsenal:cobalt_axe",
+              "tieredarsenal:cobalt_helmet",
+              "tieredarsenal:cobalt_chestplate",
+              "tieredarsenal:cobalt_leggings",
+              "tieredarsenal:cobalt_boots",
+              "tieredarsenal:cobalt_greatsword",
+              "tieredarsenal:cobalt_dagger",
+              "tieredarsenal:cobalt_spear",
+              "tieredarsenal:cobalt_warhammer",
+              "tieredarsenal:cobalt_bow",
+              "tieredarsenal:cobalt_shield"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_any"
+    ]
+  ],
+  "parent": "tieredarsenal:cobalt"
+}

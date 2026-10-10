@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "tieredarsenal:cobalt_ingot"
+    },
+    "title": {
+      "translate": "advancements.tieredarsenal.cobalt.title"
+    },
+    "description": {
+      "translate": "advancements.tieredarsenal.cobalt.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_any": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tieredarsenal:cobalt_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_any"
+    ]
+  ],
+  "parent": "tieredarsenal:root"
+}

@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "tieredarsenal:lifesteal_module"
+    },
+    "title": {
+      "translate": "advancements.tieredarsenal.module.title"
+    },
+    "description": {
+      "translate": "advancements.tieredarsenal.module.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_any": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tieredarsenal:lifesteal_module",
+              "tieredarsenal:fire_module",
+              "tieredarsenal:knockback_module",
+              "tieredarsenal:looting_module",
+              "tieredarsenal:vitality_module",
+              "tieredarsenal:bulwark_module",
+              "tieredarsenal:step_assist_module",
+              "tieredarsenal:aqua_lung_module"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_any"
+    ]
+  ],
+  "parent": "tieredarsenal:workbench"
+}

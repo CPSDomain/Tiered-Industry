@@ -1,0 +1,16 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tieredpower"
+    }
+  ],
+  "type": "tieredpower:purifying",
+  "ingredient": {
+    "tag": "forge:raw_materials/titanium"
+  },
+  "result": {
+    "item": "tieredarsenal:titanium_dust",
+    "count": 3
+  }
+}

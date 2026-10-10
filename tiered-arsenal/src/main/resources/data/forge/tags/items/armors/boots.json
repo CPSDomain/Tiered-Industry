@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "tieredarsenal:copper_boots",
+    "tieredarsenal:emerald_boots",
+    "tieredarsenal:cobalt_boots",
+    "tieredarsenal:titanium_boots",
+    "tieredarsenal:infernium_boots",
+    "tieredarsenal:aetherium_boots"
+  ]
+}

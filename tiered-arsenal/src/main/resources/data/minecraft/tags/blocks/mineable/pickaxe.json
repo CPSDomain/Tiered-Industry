@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "tieredarsenal:cobalt_ore",
+    "tieredarsenal:deepslate_cobalt_ore",
+    "tieredarsenal:titanium_ore",
+    "tieredarsenal:deepslate_titanium_ore",
+    "tieredarsenal:nether_infernium_ore",
+    "tieredarsenal:end_aetherium_ore",
+    "tieredarsenal:raw_cobalt_block",
+    "tieredarsenal:cobalt_block",
+    "tieredarsenal:raw_titanium_block",
+    "tieredarsenal:titanium_block",
+    "tieredarsenal:raw_infernium_block",
+    "tieredarsenal:infernium_block",
+    "tieredarsenal:raw_aetherium_block",
+    "tieredarsenal:aetherium_block",
+    "tieredarsenal:armoury_workbench"
+  ]
+}

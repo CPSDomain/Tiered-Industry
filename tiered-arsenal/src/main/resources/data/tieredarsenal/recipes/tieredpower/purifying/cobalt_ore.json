@@ -1,0 +1,16 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tieredpower"
+    }
+  ],
+  "type": "tieredpower:purifying",
+  "ingredient": {
+    "tag": "forge:ores/cobalt"
+  },
+  "result": {
+    "item": "tieredarsenal:cobalt_dust",
+    "count": 3
+  }
+}

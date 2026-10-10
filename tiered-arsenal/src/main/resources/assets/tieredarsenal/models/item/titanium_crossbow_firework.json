@@ -1,0 +1,6 @@
+{
+  "parent": "tieredarsenal:item/titanium_crossbow",
+  "textures": {
+    "layer0": "tieredarsenal:item/titanium_crossbow_firework"
+  }
+}

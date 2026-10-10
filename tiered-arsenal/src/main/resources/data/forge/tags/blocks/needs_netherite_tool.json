@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tieredarsenal:end_aetherium_ore",
+    "tieredarsenal:raw_aetherium_block",
+    "tieredarsenal:aetherium_block"
+  ]
+}

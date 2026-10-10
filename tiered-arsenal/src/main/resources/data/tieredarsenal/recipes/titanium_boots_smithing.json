@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tieredarsenal:titanium_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "tieredarsenal:cobalt_boots"
+  },
+  "addition": {
+    "tag": "forge:ingots/titanium"
+  },
+  "result": {
+    "item": "tieredarsenal:titanium_boots"
+  }
+}

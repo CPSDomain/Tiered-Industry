@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "tieredarsenal:copper_shield",
+    "tieredarsenal:emerald_shield",
+    "tieredarsenal:cobalt_shield",
+    "tieredarsenal:titanium_shield",
+    "tieredarsenal:infernium_shield",
+    "tieredarsenal:aetherium_shield"
+  ]
+}

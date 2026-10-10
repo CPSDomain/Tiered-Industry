@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tieredarsenal:titanium_block"
+    }
+  ],
+  "result": {
+    "item": "tieredarsenal:titanium_ingot",
+    "count": 9
+  }
+}

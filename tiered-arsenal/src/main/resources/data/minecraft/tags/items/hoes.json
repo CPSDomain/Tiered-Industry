@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "tieredarsenal:copper_hoe",
+    "tieredarsenal:emerald_hoe",
+    "tieredarsenal:cobalt_hoe",
+    "tieredarsenal:titanium_hoe",
+    "tieredarsenal:infernium_hoe",
+    "tieredarsenal:aetherium_hoe"
+  ]
+}

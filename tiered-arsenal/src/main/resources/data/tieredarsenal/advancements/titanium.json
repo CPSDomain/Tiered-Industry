@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "tieredarsenal:titanium_ingot"
+    },
+    "title": {
+      "translate": "advancements.tieredarsenal.titanium.title"
+    },
+    "description": {
+      "translate": "advancements.tieredarsenal.titanium.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_any": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tieredarsenal:titanium_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_any"
+    ]
+  ],
+  "parent": "tieredarsenal:first_upgrade"
+}

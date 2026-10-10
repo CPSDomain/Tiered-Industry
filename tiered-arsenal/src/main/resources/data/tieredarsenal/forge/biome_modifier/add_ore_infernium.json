@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": "tieredarsenal:ore_infernium",
+  "step": "underground_ores"
+}

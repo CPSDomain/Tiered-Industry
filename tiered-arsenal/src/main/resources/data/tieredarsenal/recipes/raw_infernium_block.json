@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tieredarsenal:raw_infernium"
+    }
+  },
+  "result": {
+    "item": "tieredarsenal:raw_infernium_block"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "tieredarsenal:item/emerald_crossbow",
+  "textures": {
+    "layer0": "tieredarsenal:item/emerald_crossbow_pulling_0"
+  }
+}

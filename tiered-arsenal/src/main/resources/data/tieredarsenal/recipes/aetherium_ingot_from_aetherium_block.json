@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tieredarsenal:aetherium_block"
+    }
+  ],
+  "result": {
+    "item": "tieredarsenal:aetherium_ingot",
+    "count": 9
+  }
+}

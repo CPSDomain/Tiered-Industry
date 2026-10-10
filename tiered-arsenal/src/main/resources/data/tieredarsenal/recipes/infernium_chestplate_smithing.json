@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tieredarsenal:infernium_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "tieredarsenal:titanium_chestplate"
+  },
+  "addition": {
+    "tag": "forge:ingots/infernium"
+  },
+  "result": {
+    "item": "tieredarsenal:infernium_chestplate"
+  }
+}

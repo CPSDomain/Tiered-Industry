@@ -1,0 +1,9 @@
+{
+  "asset_name": "tieredarsenal_infernium",
+  "description": {
+    "color": "#DE3416",
+    "translate": "trim_material.tieredarsenal.infernium"
+  },
+  "ingredient": "tieredarsenal:infernium_ingot",
+  "item_model_index": 0.03
+}

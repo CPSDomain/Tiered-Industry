@@ -1,0 +1,74 @@
+# Tiered Industries: builds the mod whenever anything in tiered-industries/ is pushed to main.
+# When mod_version in tiered-industries/gradle.properties is new (no tag for it yet), it also publishes a GitHub
+# Release named after the version, with that version's CHANGELOG section as the notes and the jar attached.
+name: Tiered Industries
+
+on:
+  push:
+    branches: [ main ]
+    paths: [ 'tiered-industries/**', '.github/workflows/tiered-industries.yml' ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tiered-industries
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tiered-industries
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # all tags, to see whether this version was already released
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Build
+        run: |
+          chmod +x ./gradlew
+          ./gradlew build --no-daemon
+
+      - name: Read version and release notes
+        id: v
+        run: |
+          VER=$(grep '^mod_version=' gradle.properties | cut -d= -f2 | tr -d '\r ')
+          TAG="tieredindustries-v$VER"
+          echo "version=$VER" >> "$GITHUB_OUTPUT"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          if git rev-parse -q --verify "refs/tags/$TAG" >/dev/null; then
+            echo "new=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "new=true" >> "$GITHUB_OUTPUT"
+          fi
+          TITLE=$(grep -m1 "^## $VER" CHANGELOG.md | sed 's/^## //' | tr -d '\r')
+          echo "title=${TITLE:-$VER}" >> "$GITHUB_OUTPUT"
+          awk -v v="## $VER" 'index($0, v) == 1 {f = 1; next} /^## / {f = 0} f' CHANGELOG.md > release-notes.md
+          ls -l build/libs
+
+      - name: Keep the jar with this run
+        uses: actions/upload-artifact@v4
+        with:
+          name: tieredpower-${{ steps.v.outputs.version }}
+          path: tiered-industries/build/libs/tieredpower-${{ steps.v.outputs.version }}.jar
+
+      - name: Publish the release (new versions only)
+        if: steps.v.outputs.new == 'true' && github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.v.outputs.tag }}
+          target_commitish: ${{ github.sha }}
+          name: Tiered Industries ${{ steps.v.outputs.title }}
+          body_path: tiered-industries/release-notes.md
+          files: tiered-industries/build/libs/tieredpower-${{ steps.v.outputs.version }}.jar
+          make_latest: true

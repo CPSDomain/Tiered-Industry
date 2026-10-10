@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "tieredarsenal:copper_helmet",
+    "tieredarsenal:emerald_helmet",
+    "tieredarsenal:cobalt_helmet",
+    "tieredarsenal:titanium_helmet",
+    "tieredarsenal:infernium_helmet",
+    "tieredarsenal:aetherium_helmet"
+  ]
+}

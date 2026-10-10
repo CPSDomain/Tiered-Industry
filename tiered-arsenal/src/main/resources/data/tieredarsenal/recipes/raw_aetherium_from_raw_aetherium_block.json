@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tieredarsenal:raw_aetherium_block"
+    }
+  ],
+  "result": {
+    "item": "tieredarsenal:raw_aetherium",
+    "count": 9
+  }
+}

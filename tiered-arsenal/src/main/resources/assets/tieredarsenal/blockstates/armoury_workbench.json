@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "tieredarsenal:block/armoury_workbench"
+    },
+    "facing=east": {
+      "model": "tieredarsenal:block/armoury_workbench",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "tieredarsenal:block/armoury_workbench",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tieredarsenal:block/armoury_workbench",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "tieredpower"
+      }
+    }
+  ],
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "group": "titanium_ingot",
+  "ingredient": {
+    "item": "tieredarsenal:raw_titanium"
+  },
+  "result": "tieredarsenal:titanium_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}
