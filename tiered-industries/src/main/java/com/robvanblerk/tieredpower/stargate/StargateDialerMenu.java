@@ -13,7 +13,7 @@ import com.robvanblerk.tieredpower.registry.ModMenus;
 public class StargateDialerMenu extends MachineMenu {
 	// 0 energy (per mille), 1 ring found, 2 on a planet, 3 open ticks (-1 held open by redstone), 4 redstone target,
 	// 5 which hidden worlds the player knows (low 16 bits), 6 the rest (high bits)
-	public static final int DATA_COUNT = 7;
+	public static final int DATA_COUNT = 8; // 7: this gate is the far end of someone else's connection
 	public static final int BUTTON_CLOSE = 97, BUTTON_REDSTONE = 98, BUTTON_HOME = 99, BUTTON_PLANET = 100;
 	private final ContainerLevelAccess access;
 
@@ -33,6 +33,7 @@ public class StargateDialerMenu extends MachineMenu {
 	/** Ticks the gate stays open; -1 while held open by redstone; 0 when shut. */
 	public int getOpenTicks() { return data.get(3); }
 	public boolean isOpen() { return data.get(3) != 0; }
+	public boolean isIncoming() { return data.get(7) != 0; }
 	public int getRedstoneTarget() { return data.get(4); }
 
 	/** Whether the player looking at this DHD knows a world's address (the first eight are always known). */
@@ -56,7 +57,10 @@ public class StargateDialerMenu extends MachineMenu {
 		if (id == BUTTON_CLOSE || id == BUTTON_REDSTONE) {
 			access.execute((level, pos) -> {
 				if (level.getBlockEntity(pos) instanceof StargateDialerBlockEntity d) {
-					if (id == BUTTON_CLOSE) d.close();
+					if (id == BUTTON_CLOSE) {
+						if (d.isGateOpen()) d.close();
+						else d.closeIncoming(player instanceof ServerPlayer sp2 ? sp2 : null);
+					}
 					else d.cycleRedstoneTarget(player);
 				}
 			});

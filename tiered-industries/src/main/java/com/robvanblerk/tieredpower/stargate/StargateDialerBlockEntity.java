@@ -44,8 +44,7 @@ import com.robvanblerk.tieredpower.registry.ModBlocks;
  * Stargate Dialler (a DHD): dials the Stargate ring next to it (within 8 blocks). From home, opening a gate to a planet
  * costs 50 billion FE, and keeping it open costs 1 million FE per tick (feed it from an Energy Core's Output Pylons). On a
  * planet the dialler is free: it can go home or on to any other planet. A gate dialled by hand stays open for 30 seconds;
- * one dialled by redstone stays open as long as the signal is on. While a gate is open, Gate Interfaces at both ends
- * pass items, fluids and power through it.
+ * one dialled by redstone stays open as long as the signal is on.
  */
 public class StargateDialerBlockEntity extends BlockEntity implements MenuProvider {
 	public static final long CAPACITY = 100_000_000_000L, DIAL_COST = 50_000_000_000L, UPKEEP = 1_000_000L;
@@ -58,6 +57,7 @@ public class StargateDialerBlockEntity extends BlockEntity implements MenuProvid
 	private int ticks;
 	private int redstoneTarget = REDSTONE_OFF;
 	private int redstoneCooldown;
+	private boolean incomingCache;
 
 	// The connection this dialler is running (not saved: an open gate closes on a world reload).
 	private @Nullable StargateRing.Shape ring;
@@ -82,6 +82,7 @@ public class StargateDialerBlockEntity extends BlockEntity implements MenuProvid
 				case 2 -> level != null && Planet.of(level) != null ? 1 : 0;
 				case 3 -> !active ? 0 : byRedstone ? -1 : Math.max(1, Math.min(30_000, openTicks + pendingDelay));
 				case 4 -> redstoneTarget;
+				case 7 -> incomingCache ? 1 : 0;
 				default -> 0;
 			};
 		}
@@ -98,6 +99,7 @@ public class StargateDialerBlockEntity extends BlockEntity implements MenuProvid
 
 	public static void tick(Level level, BlockPos pos, BlockState state, StargateDialerBlockEntity be) {
 		if (++be.ticks % 40 == 0) be.ringFound = be.findRing() != null;
+		if (be.ticks % 20 == 0) be.incomingCache = be.hasIncoming();
 		boolean powered = level.hasNeighborSignal(pos);
 		if (be.redstoneCooldown > 0) be.redstoneCooldown--;
 		if (be.active) be.runGate((ServerLevel) level, powered);
@@ -178,6 +180,33 @@ public class StargateDialerBlockEntity extends BlockEntity implements MenuProvid
 		for (BlockPos p : r.inside()) if (lvl.getBlockState(p).is(ModBlocks.EVENT_HORIZON.get())) lvl.setBlock(p, net.minecraft.world.level.block.Blocks.AIR.defaultBlockState(), Block.UPDATE_ALL);
 	}
 
+	/** True when this dialler's gate is the far end of a connection opened by another dialler. */
+	public boolean hasIncoming() {
+		if (active || level == null) return false;
+		StargateRing.Shape r = findRing();
+		return r != null && Wormholes.other(GlobalPos.of(level.dimension(), r.master())) != null;
+	}
+
+	/** Close gate pressed on the far end of a connection: shut it from the dialler that opened it. */
+	public void closeIncoming(@Nullable ServerPlayer player) {
+		if (level == null || level.getServer() == null) return;
+		StargateRing.Shape r = findRing();
+		if (r == null) return;
+		GlobalPos owner = Wormholes.owner(GlobalPos.of(level.dimension(), r.master()));
+		ServerLevel ol = owner == null ? null : level.getServer().getLevel(owner.dimension());
+		if (ol != null && ol.isLoaded(owner.pos()) && ol.getBlockEntity(owner.pos()) instanceof StargateDialerBlockEntity d && d.active) {
+			d.close();
+			if (d.byRedstone) d.redstoneCooldown = 200;
+			tell(player, "Connection closed", ChatFormatting.AQUA, true);
+		} else {
+			// the dialler is gone or unloaded: just let go of this end
+			Wormholes.disconnect(GlobalPos.of(level.dimension(), r.master()));
+			if (level.getBlockEntity(r.master()) instanceof StargateRingBlockEntity g) g.close();
+			for (BlockPos p : r.inside()) if (level.getBlockState(p).is(ModBlocks.EVENT_HORIZON.get())) level.setBlock(p, net.minecraft.world.level.block.Blocks.AIR.defaultBlockState(), Block.UPDATE_ALL);
+			tell(player, "Connection closed", ChatFormatting.AQUA, true);
+		}
+	}
+
 	/** Shuts the gate: the surface goes, both rings power down and the connection ends. */
 	public void close() {
 		if (level == null) return;
@@ -245,8 +274,10 @@ public class StargateDialerBlockEntity extends BlockEntity implements MenuProvid
 			tell(player, "No complete Stargate ring within " + SEARCH + " blocks (a 7x7 square of Stargate Frame, empty inside)", ChatFormatting.RED, false);
 			return false;
 		}
-		if (level.getBlockEntity(r.master()) instanceof StargateRingBlockEntity g && g.isActive()) {
-			tell(player, "That gate is busy - another gate is connected to it", ChatFormatting.YELLOW, true);
+		GlobalPos myGate = GlobalPos.of(level.dimension(), r.master());
+		GlobalPos incoming = Wormholes.other(myGate);
+		if (incoming == null && level.getBlockEntity(r.master()) instanceof StargateRingBlockEntity g && g.isActive()) {
+			tell(player, "That gate is busy - wait a moment", ChatFormatting.YELLOW, true);
 			return false;
 		}
 		Planet here = Planet.of(level);
@@ -300,7 +331,17 @@ public class StargateDialerBlockEntity extends BlockEntity implements MenuProvid
 			tell(player, String.format("Needs 50 billion FE to open a gate, plus 1 million FE/t to keep it open (it has %,d)", energy), ChatFormatting.RED, false);
 			return false;
 		}
-		if (far != null && there.getBlockEntity(far.pos()) instanceof StargateRingBlockEntity fg && fg.isActive()) {
+		if (incoming != null) {
+			// this gate is the far end of a connection another dialler opened (e.g. one held open from a planet)
+			if (incoming.equals(far)) {
+				tell(player, "Already connected to " + name(choice) + " - the gate is open, walk through", ChatFormatting.AQUA, true);
+			} else {
+				tell(player, "That gate is busy with another connection - press Close gate (or the dome) to shut it first", ChatFormatting.YELLOW, false);
+			}
+			return false;
+		}
+		if (far != null && there.getBlockEntity(far.pos()) instanceof StargateRingBlockEntity fg && fg.isActive()
+				&& !myGate.equals(Wormholes.other(far))) {
 			tell(player, "The gate at the other end is busy", ChatFormatting.YELLOW, true);
 			return false;
 		}
@@ -328,6 +369,7 @@ public class StargateDialerBlockEntity extends BlockEntity implements MenuProvid
 		Wormholes.disconnect(GlobalPos.of(level.dimension(), r.master()));
 		if (far != null) {
 			Wormholes.connect(GlobalPos.of(level.dimension(), r.master()), far);
+			Wormholes.setOwner(GlobalPos.of(level.dimension(), r.master()), far, GlobalPos.of(level.dimension(), worldPosition));
 			loadRemote(there);
 			there.getChunk(far.pos());
 			if (there.getBlockEntity(far.pos()) instanceof StargateRingBlockEntity fg) {
@@ -420,7 +462,7 @@ public class StargateDialerBlockEntity extends BlockEntity implements MenuProvid
 		ContainerData mine = new ContainerData() {
 			@Override
 			public int get(int i) {
-				if (i < 5) return data.get(i);
+				if (i != 5 && i != 6) return data.get(i);
 				int mask = player.getServer() == null ? 0 : StargateData.get(player.getServer()).knownMask(player.getUUID());
 				return i == 5 ? (short) (mask & 0xFFFF) : (short) ((mask >>> 16) & 0xFFFF);
 			}

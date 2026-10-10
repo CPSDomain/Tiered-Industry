@@ -385,8 +385,8 @@ public final class ModBlockEntities {
 
 	public static final RegistryObject<BlockEntityType<com.robvanblerk.tieredpower.stargate.StargateDialerBlockEntity>> STARGATE_DIALER =
 			BLOCK_ENTITIES.register("stargate_dialer", () -> BlockEntityType.Builder.of(com.robvanblerk.tieredpower.stargate.StargateDialerBlockEntity::new, ModBlocks.STARGATE_DIALER.get()).build(null));
-	public static final RegistryObject<BlockEntityType<com.robvanblerk.tieredpower.stargate.GateInterfaceBlockEntity>> GATE_INTERFACE =
-			BLOCK_ENTITIES.register("gate_interface", () -> BlockEntityType.Builder.of(com.robvanblerk.tieredpower.stargate.GateInterfaceBlockEntity::new, ModBlocks.GATE_INTERFACE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<com.robvanblerk.tieredpower.quantum.QuantumChestBlockEntity>> QUANTUM_CHEST =
+			BLOCK_ENTITIES.register("quantum_chest", () -> BlockEntityType.Builder.of(com.robvanblerk.tieredpower.quantum.QuantumChestBlockEntity::new, ModBlocks.QUANTUM_CHEST.get()).build(null));
 	public static final RegistryObject<BlockEntityType<com.robvanblerk.tieredpower.stargate.StargateRingBlockEntity>> STARGATE_RING =
 			BLOCK_ENTITIES.register("stargate_ring", () -> BlockEntityType.Builder.of(com.robvanblerk.tieredpower.stargate.StargateRingBlockEntity::new, ModBlocks.STARGATE_FRAME.get()).build(null));
 	public static final RegistryObject<BlockEntityType<com.robvanblerk.tieredpower.stargate.EventHorizonBlockEntity>> EVENT_HORIZON =

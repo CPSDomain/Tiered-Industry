@@ -102,7 +102,7 @@ public class StargateDialerScreen extends AbstractContainerScreen<StargateDialer
 		g.fill(x + PANEL - 3, y + 1, x + imageWidth - 1, y + imageHeight - 1, 0xFF30343B);
 
 		int hover = keyAt(mouseX, mouseY);
-		boolean open = menu.isOpen();
+		boolean open = menu.isOpen() || menu.isIncoming();
 		// bottom strip
 		g.fill(x, y + STRIP_Y - 4, x + imageWidth, y + imageHeight, 0xFF22252B);
 		g.fill(x + 1, y + STRIP_Y - 3, x + imageWidth - 1, y + imageHeight - 1, 0xFF30343B);
@@ -229,6 +229,7 @@ public class StargateDialerScreen extends AbstractContainerScreen<StargateDialer
 		g.drawString(font, "Dial Home Device", PANEL, 6, 0xFFD8B070, false);
 		if (statusTicks > 0 || !status.isEmpty()) g.drawString(font, status, PANEL, 34, statusColour, false);
 		else if (!menu.hasRing()) g.drawString(font, "No Stargate nearby", PANEL, 34, 0xFF6060, false);
+		else if (menu.isIncoming()) g.drawString(font, "Incoming - gate open", PANEL, 34, 0x7FD0FF, false);
 		else if (menu.getOpenTicks() < 0) g.drawString(font, "Gate open (redstone)", PANEL, 34, 0x7FD0FF, false);
 		else if (menu.getOpenTicks() > 0) g.drawString(font, "Gate open: " + menu.getOpenTicks() / 20 + " s", PANEL, 34, 0x7FD0FF, false);
 		else g.drawString(font, entered.isEmpty() ? "Press 6 glyphs + origin" : "Chevron " + entered.size() + " encoded", PANEL, 34, 0xC0C0C0, false);
@@ -254,7 +255,7 @@ public class StargateDialerScreen extends AbstractContainerScreen<StargateDialer
 		int rt = menu.getRedstoneTarget();
 		String rs = rt == StargateDialerBlockEntity.REDSTONE_OFF ? "Off" : rt < 0 ? "Home" : Planet.values()[Math.min(rt, Planet.values().length - 1)].title;
 		g.drawString(font, "Redstone signal dials: " + rs, RS_X + 4, STRIP_Y + 3, 0xFFFFFF, false);
-		g.drawCenteredString(font, "Close gate", CLOSE_X + CLOSE_W / 2, STRIP_Y + 3, menu.isOpen() ? 0xFFFFFF : 0x707070);
+		g.drawCenteredString(font, "Close gate", CLOSE_X + CLOSE_W / 2, STRIP_Y + 3, menu.isOpen() || menu.isIncoming() ? 0xFFFFFF : 0x707070);
 	}
 
 	@Override
@@ -286,7 +287,7 @@ public class StargateDialerScreen extends AbstractContainerScreen<StargateDialer
 			}
 		}
 		if (keyAt(mouseX, mouseY) == -2)
-			g.renderTooltip(font, Component.literal(menu.isOpen() ? "Close the gate" : "Dial"), mouseX, mouseY);
+			g.renderTooltip(font, Component.literal(menu.isOpen() || menu.isIncoming() ? "Close the gate" : "Dial"), mouseX, mouseY);
 		if (isHovering(RS_X, STRIP_Y, RS_W, STRIP_H, mouseX, mouseY))
 			g.renderComponentTooltip(font, List.of(Component.literal("Click to change"),
 					Component.literal("A redstone signal into the DHD dials this address and holds").withStyle(ChatFormatting.GRAY),
@@ -317,7 +318,7 @@ public class StargateDialerScreen extends AbstractContainerScreen<StargateDialer
 	}
 
 	private void dome() {
-		if (menu.isOpen()) { closeGate(); return; }
+		if (menu.isOpen() || menu.isIncoming()) { closeGate(); return; }
 		if (!menu.hasRing()) { fail("No Stargate nearby"); return; }
 		Integer choice = GateAddress.resolve(entered.stream().mapToInt(Integer::intValue).toArray());
 		if (choice == null) { fail("Dial program failed"); return; }
@@ -346,7 +347,7 @@ public class StargateDialerScreen extends AbstractContainerScreen<StargateDialer
 				click(1.0f);
 				return true;
 			}
-			if (menu.isOpen() && isHovering(CLOSE_X, STRIP_Y, CLOSE_W, STRIP_H, mouseX, mouseY)) { closeGate(); return true; }
+			if ((menu.isOpen() || menu.isIncoming()) && isHovering(CLOSE_X, STRIP_Y, CLOSE_W, STRIP_H, mouseX, mouseY)) { closeGate(); return true; }
 			int key = keyAt(mouseX, mouseY);
 			if (key == -2) { dome(); return true; }
 			if (key >= 0) { if (queue.isEmpty()) press(keyGlyph(key)); return true; }

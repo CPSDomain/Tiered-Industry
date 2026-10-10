@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "tieredpower:block/quantum_chest" },
+    "facing=east": { "model": "tieredpower:block/quantum_chest", "y": 90 },
+    "facing=south": { "model": "tieredpower:block/quantum_chest", "y": 180 },
+    "facing=west": { "model": "tieredpower:block/quantum_chest", "y": 270 }
+  }
+}

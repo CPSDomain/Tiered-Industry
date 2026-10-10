@@ -1,5 +1,23 @@
 # Changelog - Tiered Industries (formerly Tiered Power)
 
+## 1.70.0 - Quantum Chests
+
+### Added
+- **Quantum Chest**: a 54-slot chest that moves items between worlds at a quantum level - no Stargate needed. Every Quantum Chest starts as a **main chest**. Link other Quantum Chests to it and anything put into a linked chest (by hand, hopper, pipe or machine) lands in the main chest about twice a second, from any distance and any world. Link as many chests as you like to one main chest - one at each planet's mine, all feeding your base. If the main chest's area isn't loaded, items wait in transit (up to 270 stacks) and arrive when it loads. A linked chest only sends while its own area is loaded (you nearby, or a Chunk Loader). Pipes and the storage network pull from it like any chest. Recipe: Quantum Alloy in the corners, Ender Pearls on the sides, a chest in the middle - makes 2.
+- **Quantum Linker**: sneak + right-click your main chest to record it (the linker glows), then right-click other Quantum Chests to link them. It keeps the main chest, so one trip can link chests on several planets. Sneak + right-click a linked chest to unlink it. Recipe: Ender Pearl + Redstone + Quantum Alloy (shapeless).
+
+### Removed
+- **Gate Interface** - replaced by Quantum Chests. **Empty your Gate Interfaces before updating**: placed interfaces disappear when the world loads, and anything in their buffers is lost. Stargates and DHDs are unchanged and still carry players.
+
+## 1.69.5 - Stargate "busy" fixes
+
+### Fixed
+- **"The gate at the other end is busy" after a reload**: a gate that was open when the world was saved (for example a planet's gate, left connected to home) came back still marked as open, so nothing could dial it until someone went there. Gates now always start closed after a reload, and a gate that nothing is keeping open no longer counts as busy.
+- **Dialling a planet that is already connected to this gate** (for example one held open by redstone from the planet's side) now says "Already connected - the gate is open, walk through" instead of "busy". Items, fluids and power already flow through Gate Interfaces in both directions on that connection.
+
+### Changed
+- **Close gate works from either end**: on the receiving end of a connection, the DHD now shows "Incoming - gate open", and its Close gate button (or the dome) shuts the connection even though the other DHD opened it. If the other end is held open by redstone, it waits 10 seconds before dialling again.
+
 ## 1.69.4 - Irrigated Sand
 
 ### Added

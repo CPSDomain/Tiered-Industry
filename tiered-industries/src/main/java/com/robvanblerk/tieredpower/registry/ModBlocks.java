@@ -560,7 +560,9 @@ public final class ModBlocks {
 	public static final RegistryObject<Item> ADDRESS_TABLET = ITEMS.register("address_tablet", () -> new com.robvanblerk.tieredpower.stargate.AddressTabletItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
 	public static final RegistryObject<Block> STARGATE_DIALER = register("stargate_dialer", () -> new com.robvanblerk.tieredpower.stargate.StargateDialerBlock(
 			reactor().noOcclusion().lightLevel(state -> state.getValue(com.robvanblerk.tieredpower.block.MachineBlock.LIT) ? 12 : 5)));
-	public static final RegistryObject<Block> GATE_INTERFACE = register("gate_interface", () -> new com.robvanblerk.tieredpower.stargate.GateInterfaceBlock(machine()));
+	public static final RegistryObject<Block> QUANTUM_CHEST = register("quantum_chest", () -> new com.robvanblerk.tieredpower.quantum.QuantumChestBlock(
+			BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).strength(5.0f, 1200.0f).requiresCorrectToolForDrops().sound(net.minecraft.world.level.block.SoundType.NETHERITE_BLOCK).lightLevel(state -> 7)));
+	public static final RegistryObject<Item> QUANTUM_LINKER = ITEMS.register("quantum_linker", () -> new com.robvanblerk.tieredpower.quantum.QuantumLinkerItem(new Item.Properties().stacksTo(1)));
 	public static final RegistryObject<Block> EVENT_HORIZON = BLOCKS.register("event_horizon", () -> new com.robvanblerk.tieredpower.stargate.EventHorizonBlock(
 			BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_BLUE).noCollission().noOcclusion().strength(-1.0f, 3_600_000.0f)
 					.lightLevel(s -> 14).noLootTable().sound(SoundType.GLASS).isValidSpawn((s, l, p, e) -> false)));
@@ -883,7 +885,8 @@ public final class ModBlocks {
 					output.accept((net.minecraft.world.level.ItemLike) b.get());
 				output.accept(STARGATE_FRAME.get());
 				output.accept(STARGATE_DIALER.get());
-				output.accept(GATE_INTERFACE.get());
+				output.accept(QUANTUM_CHEST.get());
+				output.accept(QUANTUM_LINKER.get());
 				output.accept(GUARDIAN_ALTAR.get());
 				output.accept(GUARDIAN_HEART.get());
 				for (com.robvanblerk.tieredpower.stargate.Planet p : com.robvanblerk.tieredpower.stargate.Planet.hidden())

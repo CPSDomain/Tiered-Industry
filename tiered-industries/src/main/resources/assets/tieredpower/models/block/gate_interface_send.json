@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "side": "tieredpower:block/gate_interface_send",
-    "top": "tieredpower:block/gate_interface_top",
-    "bottom": "tieredpower:block/gate_interface_top"
-  }
-}

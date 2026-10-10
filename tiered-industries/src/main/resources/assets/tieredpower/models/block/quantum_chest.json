@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "tieredpower:block/quantum_chest_top",
+    "front": "tieredpower:block/quantum_chest_front",
+    "side": "tieredpower:block/quantum_chest_side"
+  }
+}

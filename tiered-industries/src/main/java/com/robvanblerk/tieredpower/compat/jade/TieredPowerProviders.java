@@ -409,8 +409,8 @@ final class TieredPowerProviders {
 				if (dg.getGenerating() > 0) lines.add("Making " + shortFe(dg.getGenerating()) + " FE/t");
 			} else if (be instanceof com.robvanblerk.tieredpower.stargate.StargateDialerBlockEntity sd) {
 				lines.addAll(sd.info());
-			} else if (be instanceof com.robvanblerk.tieredpower.stargate.GateInterfaceBlockEntity gi) {
-				lines.addAll(gi.info());
+			} else if (be instanceof com.robvanblerk.tieredpower.quantum.QuantumChestBlockEntity qc) {
+				lines.addAll(qc.info());
 			} else if (be instanceof com.robvanblerk.tieredpower.redstone.WirelessRedstoneBlockEntity wr) {
 				lines.addAll(wr.info());
 			} else if (be instanceof com.robvanblerk.tieredpower.logic.MachineStatusDisplayBlockEntity ms) {

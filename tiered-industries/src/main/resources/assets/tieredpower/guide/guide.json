@@ -1,5 +1,5 @@
 {
- "version": "1.69.4",
+ "version": "1.70.0",
  "start": [
   {
    "title": "Coal",
@@ -2941,7 +2941,7 @@
     },
     {
      "id": "stargate_dialer",
-     "text": "A DHD (Dial Home Device), like on TV: a pedestal with a sloping keypad. Right-click it for the keypad - two rings of glyph keys around a big red dome. Press the six glyphs of an address, then the point of origin (the pyramid), then the dome; the Addresses list types one in for you. A formed (round) gate spins up and locks its chevrons, then the vortex bursts out (anything in front of the gate is vaporised - players are only thrown clear) and the event horizon stays open for 30 seconds - walk through to travel. The gate at the other end lights up too. Press the dome (or Close gate) to shut it early. Redstone: pick an address at the bottom of the keypad, and a redstone signal into the DHD dials it and holds the gate open until the signal goes off - for Gate Interfaces. From home every gate costs 50 billion FE to dial plus 1 million FE/t while open, so feed it from an Energy Core (Output Pylons) or a big bank of cables; it holds 100 billion. Each planet is a whole world that generates as you explore. Frost, Dune, Verdant, Inferno, Abyss, Skylands, Mycelia and Crystal Depths are in the address list from the start; eight hidden worlds (Eden, Karoo, Redwood, Murk, Titan, Wraith, Umbra and Void Reach) need their address found first - see Stargate Address. The first visit builds a landing platform with its own gate and DHD, and dialling from a planet is free - Home takes you back to where you left, or go on to another planet.",
+     "text": "A DHD (Dial Home Device), like on TV: a pedestal with a sloping keypad. Right-click it for the keypad - two rings of glyph keys around a big red dome. Press the six glyphs of an address, then the point of origin (the pyramid), then the dome; the Addresses list types one in for you. A formed (round) gate spins up and locks its chevrons, then the vortex bursts out (anything in front of the gate is vaporised - players are only thrown clear) and the event horizon stays open for 30 seconds - walk through to travel. The gate at the other end lights up too. Press the dome (or Close gate) to shut it early. Redstone: pick an address at the bottom of the keypad, and a redstone signal into the DHD dials it and holds the gate open until the signal goes off. From home every gate costs 50 billion FE to dial plus 1 million FE/t while open, so feed it from an Energy Core (Output Pylons) or a big bank of cables; it holds 100 billion. Each planet is a whole world that generates as you explore. Frost, Dune, Verdant, Inferno, Abyss, Skylands, Mycelia and Crystal Depths are in the address list from the start; eight hidden worlds (Eden, Karoo, Redwood, Murk, Titan, Wraith, Umbra and Void Reach) need their address found first - see Stargate Address. The first visit builds a landing platform with its own gate and DHD, and dialling from a planet is free - Home takes you back to where you left, or go on to another planet. Close gate (or the dome) also shuts an incoming connection opened by the DHD at the other end.",
      "stats": [
       [
        "Cost from home",
@@ -2970,30 +2970,38 @@
      ]
     },
     {
+     "id": "quantum_chest",
+     "text": "A 54-slot chest that moves items between worlds at a quantum level - no Stargate needed. Every Quantum Chest starts as a main chest: put one at your base. Link others to it with a Quantum Linker and anything that goes into a linked chest (by hand, hopper, pipe or machine) appears in the main chest about twice a second, from any distance and any world. Link as many chests as you like to one main chest - e.g. one at each planet's mine. If the main chest's area isn't loaded the items wait in transit (up to 270 stacks) and arrive when it loads. A linked chest only sends while its own area is loaded (you nearby, or a Chunk Loader to keep a remote mine running). Pipes and the storage network can pull from the main chest like any chest. Breaking a main chest drops its contents plus anything in transit, and its linked chests stop sending until linked to a new one. Crafts in pairs.",
+     "stats": [
+      [
+       "Slots",
+       "54"
+      ],
+      [
+       "Sends",
+       "every 10 ticks, any distance, any world"
+      ],
+      [
+       "In transit",
+       "up to 270 stacks while the main chest isn't loaded"
+      ],
+      [
+       "Links",
+       "unlimited chests to one main chest"
+      ]
+     ]
+    },
+    {
+     "id": "quantum_linker",
+     "text": "Links Quantum Chests. Sneak + right-click your main Quantum Chest to record it (the linker glows), then right-click any number of other Quantum Chests to link them - in this world or another. The linker keeps the main chest, so one trip can link chests on several planets. Sneak + right-click a linked chest to unlink it (it becomes a main chest again)."
+    },
+    {
      "id": "stargate_frame",
      "text": "Build a standing 7x7 square of these (24 blocks, empty inside, facing either way), then right-click any of them with an empty hand: the square turns into a round Stargate like the one on TV - a thick ring with a recessed band of glyphs and nine chevrons. When you dial, the glyph band spins and the chevrons lock one by one before the vortex bursts out of the gate and settles into the rippling event horizon. Don't stand in front of it. Breaking any piece turns it back into blocks. Put a Stargate Dialler within 8 blocks. Once you reach the Inferno planet, 4 Naquadah Ingots and 4 Steel Plates make 8 frames.",
      "stats": [
       [
        "Ring",
        "7x7, 24 frames"
-      ]
-     ]
-    },
-    {
-     "id": "gate_interface",
-     "text": "Carries items, fluids (and gases) and power through an open Stargate. Put one within 8 blocks of each gate. Right-click with an empty hand to switch it between Send (the arrow points up) and Receive (the arrow points down). Feed a Send interface with pipes, cables or a hopper; while the gate is open it passes up to 32 items, 8,000 mB and 8 million FE every tick to the Receive interfaces at the other end, which push it all into the blocks next to them. It works both ways at once, so one gate can bring ore home and send power out. Dial with redstone to hold the gate open for as long as you need. Both ends load themselves while the gate is open, but the dialling end needs a player or a Chunk Loader nearby.",
-     "stats": [
-      [
-       "Per tick",
-       "32 items, 8,000 mB, 8M FE"
-      ],
-      [
-       "Range",
-       "within 8 blocks of a gate"
-      ],
-      [
-       "Modes",
-       "Send / Receive"
       ]
      ]
     },

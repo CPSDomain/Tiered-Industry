@@ -1,6 +1,8 @@
 {
   "homepage": "https://github.com/CPSDomain/Modding/releases",
   "1.20.1": {
+    "1.70.0": "Quantum Chests",
+    "1.69.5": "Stargate \"busy\" fixes",
     "1.69.4": "Irrigated Sand",
     "1.69.3": "Sugar Cane Seeds, slower fertilizer, Crop Farmer restocking",
     "1.69.2": "Crop Farmer: sugar cane, cactus, stems and a fertilizer slot",
@@ -118,7 +120,7 @@
     "0.1": "0.3 - Coal, steam, fusion"
   },
   "promos": {
-    "1.20.1-latest": "1.69.4",
-    "1.20.1-recommended": "1.69.4"
+    "1.20.1-latest": "1.70.0",
+    "1.20.1-recommended": "1.70.0"
   }
 }

@@ -66,7 +66,7 @@ public class TieredPowerJadePlugin implements IWailaPlugin {
 		registration.registerBlockDataProvider(TieredPowerProviders.Info.INSTANCE, com.robvanblerk.tieredpower.drone.DroneStationBlockEntity.class);
 		registration.registerBlockDataProvider(TieredPowerProviders.Info.INSTANCE, com.robvanblerk.tieredpower.turbine.TurbineControllerBlockEntity.class);
 		registration.registerBlockDataProvider(TieredPowerProviders.Info.INSTANCE, com.robvanblerk.tieredpower.stargate.StargateDialerBlockEntity.class);
-		registration.registerBlockDataProvider(TieredPowerProviders.Info.INSTANCE, com.robvanblerk.tieredpower.stargate.GateInterfaceBlockEntity.class);
+		registration.registerBlockDataProvider(TieredPowerProviders.Info.INSTANCE, com.robvanblerk.tieredpower.quantum.QuantumChestBlockEntity.class);
 		registration.registerBlockDataProvider(TieredPowerProviders.Info.INSTANCE, com.robvanblerk.tieredpower.redstone.WirelessRedstoneBlockEntity.class);
 		registration.registerBlockDataProvider(TieredPowerProviders.Info.INSTANCE, com.robvanblerk.tieredpower.logic.MachineStatusDisplayBlockEntity.class);
 	}
@@ -118,7 +118,7 @@ public class TieredPowerJadePlugin implements IWailaPlugin {
 		registration.registerBlockComponent(TieredPowerProviders.Info.INSTANCE, com.robvanblerk.tieredpower.drone.DroneStationBlock.class);
 		registration.registerBlockComponent(TieredPowerProviders.Info.INSTANCE, com.robvanblerk.tieredpower.turbine.TurbineControllerBlock.class);
 		registration.registerBlockComponent(TieredPowerProviders.Info.INSTANCE, com.robvanblerk.tieredpower.stargate.StargateDialerBlock.class);
-		registration.registerBlockComponent(TieredPowerProviders.Info.INSTANCE, com.robvanblerk.tieredpower.stargate.GateInterfaceBlock.class);
+		registration.registerBlockComponent(TieredPowerProviders.Info.INSTANCE, com.robvanblerk.tieredpower.quantum.QuantumChestBlock.class);
 		registration.registerBlockComponent(TieredPowerProviders.Info.INSTANCE, com.robvanblerk.tieredpower.redstone.WirelessRedstoneBlock.class);
 		registration.registerBlockComponent(TieredPowerProviders.Info.INSTANCE, com.robvanblerk.tieredpower.logic.MachineStatusDisplayBlock.class);
 	}

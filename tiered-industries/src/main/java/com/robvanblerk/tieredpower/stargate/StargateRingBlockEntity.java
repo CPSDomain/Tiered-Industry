@@ -66,7 +66,10 @@ public class StargateRingBlockEntity extends BlockEntity {
 		if (level != null) lastKeep = level.getGameTime();
 	}
 
-	public boolean isActive() { return dialing > 0 || open > 0; }
+	/** Dialling or open, and still being kept alive by a dialler (a stale state from before a reload doesn't count). */
+	public boolean isActive() {
+		return (dialing > 0 || open > 0) && level != null && level.getGameTime() - lastKeep <= 60;
+	}
 
 	public void close() {
 		dialing = 0;
@@ -149,16 +152,13 @@ public class StargateRingBlockEntity extends BlockEntity {
 	@Override
 	protected void saveAdditional(CompoundTag tag) {
 		super.saveAdditional(tag);
-		tag.putInt("dialing", dialing);
-		tag.putInt("open", open);
+		// not saved: a gate always starts closed after a reload (the dialler that opened it has forgotten it too)
 		tag.putInt("side", side);
 	}
 
 	@Override
 	public void load(CompoundTag tag) {
 		super.load(tag);
-		dialing = tag.getInt("dialing");
-		open = tag.getInt("open");
 		side = tag.getInt("side") < 0 ? -1 : 1;
 	}
 

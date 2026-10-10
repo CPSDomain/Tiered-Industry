@@ -289,7 +289,8 @@ public class TieredPowerJeiPlugin implements IModPlugin {
 		info(registration, ModBlocks.SPATIAL_PROJECTOR, "spatial_projector");
 		info(registration, ModBlocks.ELEVATOR, "elevator");
 		info(registration, ModBlocks.STARGATE_DIALER, "stargate_dialer");
-		info(registration, ModBlocks.GATE_INTERFACE, "gate_interface");
+		info(registration, ModBlocks.QUANTUM_CHEST, "quantum_chest");
+		info(registration, ModBlocks.QUANTUM_LINKER, "quantum_chest");
 		info(registration, ModBlocks.ADDRESS_TABLET, "address_tablet");
 		for (var r : java.util.List.of(ModBlocks.ENERGY_CORE, ModBlocks.INPUT_PYLON, ModBlocks.OUTPUT_PYLON)) info(registration, r, "energy_core");
 		for (var up : ModBlocks.CORE_UPGRADES) info(registration, up, "energy_core");
