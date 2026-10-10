@@ -1,6 +1,0 @@
-{
-  "parent": "tieredarsenal:item/copper_bow",
-  "textures": {
-    "layer0": "tieredarsenal:item/copper_bow_pulling_1"
-  }
-}

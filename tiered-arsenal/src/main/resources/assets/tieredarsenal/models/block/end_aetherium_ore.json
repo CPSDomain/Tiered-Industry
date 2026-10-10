@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "tieredarsenal:block/end_aetherium_ore"
-  }
-}

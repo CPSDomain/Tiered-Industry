@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "tieredarsenal:item/cobalt_axe"
-  }
-}

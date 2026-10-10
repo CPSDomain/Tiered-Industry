@@ -1,6 +1,0 @@
-{
-  "parent": "tieredarsenal:item/aetherium_crossbow",
-  "textures": {
-    "layer0": "tieredarsenal:item/aetherium_crossbow_pulling_2"
-  }
-}

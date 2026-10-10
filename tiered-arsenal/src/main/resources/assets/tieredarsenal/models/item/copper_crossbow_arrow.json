@@ -1,6 +1,0 @@
-{
-  "parent": "tieredarsenal:item/copper_crossbow",
-  "textures": {
-    "layer0": "tieredarsenal:item/copper_crossbow_arrow"
-  }
-}

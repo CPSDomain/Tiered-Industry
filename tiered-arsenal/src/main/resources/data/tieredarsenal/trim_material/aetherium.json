@@ -1,9 +1,0 @@
-{
-  "asset_name": "tieredarsenal_aetherium",
-  "description": {
-    "color": "#9660EC",
-    "translate": "trim_material.tieredarsenal.aetherium"
-  },
-  "ingredient": "tieredarsenal:aetherium_ingot",
-  "item_model_index": 0.04
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "tieredarsenal:item/cobalt_crossbow",
-  "textures": {
-    "layer0": "tieredarsenal:item/cobalt_crossbow_arrow"
-  }
-}

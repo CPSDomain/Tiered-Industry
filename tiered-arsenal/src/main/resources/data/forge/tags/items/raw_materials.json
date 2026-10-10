@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#forge:raw_materials/cobalt",
-    "#forge:raw_materials/titanium",
-    "#forge:raw_materials/infernium",
-    "#forge:raw_materials/aetherium"
-  ]
-}

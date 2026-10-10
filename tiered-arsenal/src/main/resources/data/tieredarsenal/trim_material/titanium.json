@@ -1,9 +1,0 @@
-{
-  "asset_name": "tieredarsenal_titanium",
-  "description": {
-    "color": "#B0BCCA",
-    "translate": "trim_material.tieredarsenal.titanium"
-  },
-  "ingredient": "tieredarsenal:titanium_ingot",
-  "item_model_index": 0.02
-}

@@ -1,9 +1,0 @@
-{
-  "asset_name": "tieredarsenal_cobalt",
-  "description": {
-    "color": "#3462D6",
-    "translate": "trim_material.tieredarsenal.cobalt"
-  },
-  "ingredient": "tieredarsenal:cobalt_ingot",
-  "item_model_index": 0.01
-}

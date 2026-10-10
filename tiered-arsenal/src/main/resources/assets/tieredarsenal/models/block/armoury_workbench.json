@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft:block/orientable_with_bottom",
-  "textures": {
-    "top": "tieredarsenal:block/armoury_workbench_top",
-    "front": "tieredarsenal:block/armoury_workbench_front",
-    "side": "tieredarsenal:block/armoury_workbench_side",
-    "bottom": "tieredarsenal:block/armoury_workbench_side"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#forge:ingots/cobalt",
-    "#forge:ingots/titanium",
-    "#forge:ingots/infernium",
-    "#forge:ingots/aetherium"
-  ]
-}

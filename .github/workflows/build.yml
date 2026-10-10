@@ -1,0 +1,73 @@
+# Builds the mod on every push to main. When mod_version in gradle.properties is new (no v<version> tag yet),
+# it also publishes a GitHub Release with that version's CHANGELOG section as the notes and the jar attached.
+name: Build and release
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # all tags, to see whether this version was already released
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Build
+        run: |
+          chmod +x ./gradlew
+          ./gradlew build --no-daemon
+
+      - name: Read version and release notes
+        id: v
+        run: |
+          VER=$(grep '^mod_version=' gradle.properties | cut -d= -f2 | tr -d '\r ')
+          NAME=$(grep '^mod_name=' gradle.properties | cut -d= -f2- | tr -d '\r')
+          TAG="v$VER"
+          echo "version=$VER" >> "$GITHUB_OUTPUT"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "name=${NAME:-$GITHUB_REPOSITORY}" >> "$GITHUB_OUTPUT"
+          if git rev-parse -q --verify "refs/tags/$TAG" >/dev/null; then
+            echo "new=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "new=true" >> "$GITHUB_OUTPUT"
+          fi
+          TITLE=$(grep -m1 "^## $VER" CHANGELOG.md | sed 's/^## //' | tr -d '\r')
+          echo "title=${TITLE:-$VER}" >> "$GITHUB_OUTPUT"
+          awk -v v="## $VER" 'index($0, v) == 1 {f = 1; next} /^## / {f = 0} f' CHANGELOG.md > release-notes.md
+          [ -s release-notes.md ] || echo "Version $VER" > release-notes.md
+          rm -f build/libs/*-sources.jar
+          ls -l build/libs
+
+      - name: Keep the jar with this run
+        uses: actions/upload-artifact@v4
+        with:
+          name: jar-${{ steps.v.outputs.version }}
+          path: build/libs/*.jar
+
+      - name: Publish the release (new versions only)
+        if: steps.v.outputs.new == 'true' && github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.v.outputs.tag }}
+          target_commitish: ${{ github.sha }}
+          name: ${{ steps.v.outputs.name }} ${{ steps.v.outputs.title }}
+          body_path: release-notes.md
+          files: build/libs/*.jar
+          make_latest: true
