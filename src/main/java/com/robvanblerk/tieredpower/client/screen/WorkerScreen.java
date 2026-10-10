@@ -28,7 +28,7 @@ public class WorkerScreen extends MachineScreen<WorkerMenu> {
 		var t = menu.getType();
 		if (t == ModMenus.BLOCK_BREAKER.get()) return "No inputs needed";
 		if (t == ModMenus.BLOCK_PLACER.get()) return "Blocks to place";
-		if (t == ModMenus.TREE_FARM.get()) return "Saplings (and bone meal)";
+		if (t == ModMenus.TREE_FARM.get()) return "Saplings (Fertilizer goes in the slot on the left)";
 		if (t == ModMenus.LASER_DRILL.get()) return "Laser Lenses (ore x10 as likely) or Item Filters (block or allow ores)";
 		if (t == ModMenus.DIGITAL_MINER.get()) return "Item Filters (which ores) and an Enchanted Book of Silk Touch or Fortune";
 		return "Feed (wheat, seeds, carrots...) and empty buckets";
@@ -54,6 +54,7 @@ public class WorkerScreen extends MachineScreen<WorkerMenu> {
 			default -> "Nothing to do";
 		};
 		text(g, s, x + 8, y + 72 - 10);
+		if (menu.getType() == ModMenus.TREE_FARM.get() && menu.getExtra() > 0) text(g, "Grow " + menu.getExtra(), x + 50, y + 20);
 		drawEnergyBar(g, x + 156, y + 18, 14, 52);
 	}
 

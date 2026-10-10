@@ -47,6 +47,7 @@ public abstract class WorkerBlockEntity extends MachineBlockEntity {
 				case 3 -> energyCost(costPerAction());
 				case 4 -> status;
 				case 5 -> special;
+				case 6 -> extraData();
 				default -> 0;
 			};
 		}
@@ -60,8 +61,18 @@ public abstract class WorkerBlockEntity extends MachineBlockEntity {
 	}
 
 	protected WorkerBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state, int capacity, int maxInput) {
-		super(type, pos, state, SIZE, capacity, maxInput, 0);
+		this(type, pos, state, capacity, maxInput, SIZE);
+	}
+
+	/** For machines with extra slots after the upgrades (e.g. the Tree Farm's fertilizer slot). */
+	protected WorkerBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state, int capacity, int maxInput, int size) {
+		super(type, pos, state, size, capacity, maxInput, 0);
 		enableUpgrades(UPGRADE_SLOT);
+	}
+
+	/** An extra number shown by the machine's screen (the Tree Farm's growth charge). */
+	protected int extraData() {
+		return 0;
 	}
 
 	/** FE for one job. */

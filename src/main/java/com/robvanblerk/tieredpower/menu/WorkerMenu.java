@@ -15,16 +15,18 @@ import com.robvanblerk.tieredpower.block.entity.WorkerBlockEntity;
 /** Shared menu for the automation machines: 3 inputs, 3x3 outputs, upgrades. */
 public class WorkerMenu extends MachineMenu {
 	// 0-1 energy, 2 actions, 3 FE per job, 4 status, 5 machine-specific message
-	public static final int DATA_COUNT = 6;
+	public static final int DATA_COUNT = 7; // 6 = machine-specific number (Tree Farm: growth charge)
+	public static final int FERT_X = 8, FERT_Y = 35;
 	public static final int INPUT_X = 30, GRID_X = 98, TOP_Y = 17;
 	private final Container container;
 
 	public WorkerMenu(MenuType<WorkerMenu> type, int id, Inventory inv) {
-		this(type, id, inv, new SimpleContainer(WorkerBlockEntity.SIZE), new SimpleContainerData(DATA_COUNT));
+		this(type, id, inv, new SimpleContainer(type == com.robvanblerk.tieredpower.registry.ModMenus.TREE_FARM.get()
+				? com.robvanblerk.tieredpower.block.entity.TreeFarmBlockEntity.SLOTS : WorkerBlockEntity.SIZE), new SimpleContainerData(DATA_COUNT));
 	}
 
 	public WorkerMenu(MenuType<WorkerMenu> type, int id, Inventory inv, Container container, ContainerData data) {
-		super(type, id, data, WorkerBlockEntity.SIZE);
+		super(type, id, data, container.getContainerSize());
 		this.container = container;
 		for (int i = 0; i < WorkerBlockEntity.INPUTS; i++) {
 			addSlot(new Slot(container, i, INPUT_X, TOP_Y + i * 18) {
@@ -33,6 +35,12 @@ public class WorkerMenu extends MachineMenu {
 		}
 		for (int i = 0; i < 9; i++) addOutputSlot(container, WorkerBlockEntity.OUTPUT_START + i, GRID_X + (i % 3) * 18, TOP_Y + (i / 3) * 18, false);
 		addUpgradeSlots(container, WorkerBlockEntity.UPGRADE_SLOT, 3);
+		if (container.getContainerSize() > com.robvanblerk.tieredpower.block.entity.TreeFarmBlockEntity.FERTILIZER_SLOT) {
+			Slot fert = addSlot(new Slot(container, com.robvanblerk.tieredpower.block.entity.TreeFarmBlockEntity.FERTILIZER_SLOT, FERT_X, FERT_Y) {
+				@Override public boolean mayPlace(ItemStack s) { return com.robvanblerk.tieredpower.block.entity.CropFarmerBlockEntity.isFertilizer(s); }
+			});
+			setGhostItem(fert.index, new ItemStack(com.robvanblerk.tieredpower.registry.ModBlocks.FERTILIZER.get()));
+		}
 		addPlayerInventory(inv);
 	}
 
@@ -40,5 +48,6 @@ public class WorkerMenu extends MachineMenu {
 	public int getActions() { return data.get(2) & 0xFFFF; }
 	public int getStatus() { return data.get(4); }
 	public int getSpecial() { return data.get(5); }
+	public int getExtra() { return data.get(6); }
 	@Override public boolean stillValid(Player player) { return container.stillValid(player); }
 }

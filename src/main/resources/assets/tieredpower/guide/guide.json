@@ -1,5 +1,5 @@
 {
- "version": "1.71.0",
+ "version": "1.72.0",
  "start": [
   {
    "title": "Coal",
@@ -2585,11 +2585,15 @@
     },
     {
      "id": "tree_farm",
-     "text": "A hands-off wood supply. It works a 9x9 patch in front of it at its own level: plants saplings from its inputs on dirt or grass, grows them faster with bone meal if you give it some, and fells grown trees - every connected log and leaf - keeping the logs, saplings, sticks and apples. Give it a few saplings to start; it replants from what it collects if you pipe the saplings back in. 200 FE per job; Speed Upgrades help.",
+     "text": "A hands-off wood supply. It plants saplings all around itself at its own level - on every other block out to 4 blocks away, so 24 trees each with room to grow - on dirt or grass, and fells grown trees (every connected log and leaf), keeping the logs, sticks and apples. Saplings that drop go straight back into its sapling slots, so a handful keeps it going. Put Fertilizer (or bone meal) in the slot on the left and it grows the saplings itself - even at night or in the dark, where saplings normally won't grow: one Fertilizer is 32 growth steps (about 16 trees), bone meal 8. Next to a storage network it keeps itself topped up with Fertilizer and more of its saplings. 2x2 trees (dark oak, giant spruce) won't grow - use single saplings. 200 FE per job; Speed Upgrades help.",
      "stats": [
       [
        "Area",
-       "9 x 9 in front"
+       "24 trees around it (every other block, 4 out)"
+      ],
+      [
+       "Fertilizer",
+       "32 growth steps (bone meal 8), works in the dark"
       ],
       [
        "Power",
